@@ -1,0 +1,13 @@
+{
+  "version": "0.0.0",
+  "name": "data-science-tools",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/nteract/**"
+    ]
+  }
+}

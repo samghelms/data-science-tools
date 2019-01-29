@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.8.0"
+  }
+}
