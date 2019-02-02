@@ -7,8 +7,9 @@ export default class Nav extends React.Component {
     constructor(props) {
         super(props)
         this.handleNameChange = this.handleNameChange.bind(this)
-        this.state = {hoverKernel: false, clicked: false}
+        this.state = {hoverKernel: false, clicked: false, height: 65}
         this.onHoverKernel = this.onHoverKernel.bind(this)
+        this.padding = 10
     }
     handleNameChange(e) {
         this.props.nameChange(e.target.value)
@@ -23,10 +24,10 @@ export default class Nav extends React.Component {
     }
 
     render() {
-        return <div style={{height: 65, width: '100%'}}> 
+        return <div style={{height: this.state.height, width: '100%'}}> 
             <input onChange={this.handleNameChange} contentEditable style={{top: 20, left: 20, position: "absolute"}} value={this.props.fileName}/>
-            <NavButton onClick={() => this.props.showFS(true)} style={{cursor: 'pointer', float: "right", padding: 10, marginRight: 40}} direction="down" opened={false} />
-            <MorphIcon onClick={() => this.onClickKernel(true)} onMouseLeave={() => this.onHoverKernel(false)} onMouseOver={() => this.onHoverKernel(true)} style={{cursor: 'pointer', float: "right", padding: 10, marginRight: 20}} type={this.state.hoverKernel ? 'plusSparks' : 'thunderbolt'}/>
+            <NavButton onClick={() => this.props.showFS(true)} style={{cursor: 'pointer', float: "right", height: this.state.height - 2 * this.padding, padding: this.padding, marginRight: 40}} direction="down" opened={false} />
+            <MorphIcon onClick={() => this.onClickKernel(true)} onMouseLeave={() => this.onHoverKernel(false)} onMouseOver={() => this.onHoverKernel(true)} style={{cursor: 'pointer', height: this.state.height - 2 * this.padding, float: "right", padding: this.padding, marginRight: 20}} type={this.state.hoverKernel ? 'plusSparks' : 'thunderbolt'}/>
             <ReactModal 
             isOpen={this.state.clicked}
             contentLabel="Minimal Modal Example"
