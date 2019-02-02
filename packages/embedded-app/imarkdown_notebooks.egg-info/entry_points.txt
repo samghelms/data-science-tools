@@ -1,0 +1,3 @@
+[console_scripts]
+jupyter-imarkdown = imarkdown_notebooks.imarkdownapp:main
+

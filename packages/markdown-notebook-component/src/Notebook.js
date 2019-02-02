@@ -8,7 +8,7 @@ const startState = {
     options: {
       glyphMargin: true,
       contextmenu: false,
-      wordWrap: "on"
+    //   wordWrap: "on"
     },
     rows: [],
     contentWidgets: [],
@@ -27,6 +27,7 @@ export default class Notebook extends React.Component {
         this.keyHandler = this.keyHandler.bind(this)
         this.save = this.save.bind(this)
         this.outputAreaRegex = /^<div [\sA-Za-z="-]*(jp-OutputArea-output)/
+        this.height = 800 // TODO: determine this fro 
     }
 
     async componentDidMount() {
@@ -39,7 +40,7 @@ export default class Notebook extends React.Component {
             this._cellsManager.updateCells(changeEvent);
         })
 
-        window.addEventListener("resize", () => this._editor.layout());
+        this._editor.layout()
 
         if (this.props.path) {
             this.initializeModel()
@@ -85,7 +86,11 @@ export default class Notebook extends React.Component {
         if (newProps.path !== null && this.props.path !== newProps.path && !newProps.isRename) {
             this._cellsManager.disposeCells()
             this.initializeModel(newProps.path)
-            
+        }
+
+        if (newProps.style.width !== this.props.style.width) {
+            console.log("new width, ", this.props.style.width)
+            this._editor.layout()
         }
     }
 
@@ -109,6 +114,6 @@ export default class Notebook extends React.Component {
     }
 
     render() {
-        return <div onKeyDown={this.keyHandler} style={this.props.style} ref={c => this.monacoRef = c}/>
+        return <div style={{height: 1000}} onKeyDown={this.keyHandler} ref={c => this.monacoRef = c}/>
     }
 }
