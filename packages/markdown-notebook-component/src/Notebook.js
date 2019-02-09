@@ -7,13 +7,49 @@ const startState = {
     // defaultVal: 'test\ntest',
     options: {
       glyphMargin: true,
-      contextmenu: false,
-    //   wordWrap: "on"
+      wordWrap: 'on'
     },
     rows: [],
     contentWidgets: [],
     newContentWidgets: true,
 }
+
+let languageDefinitions = {};
+
+function _loadLanguage(languageId) {
+	const loader = languageDefinitions[languageId].loader;
+	return loader().then((mod) => {
+		monaco.languages.setMonarchTokensProvider(languageId, mod.language);
+		monaco.languages.setLanguageConfiguration(languageId, mod.conf);
+	});
+}
+
+let languagePromises = {};
+
+export function loadLanguage(languageId) {
+	if (!languagePromises[languageId]) {
+		languagePromises[languageId] = _loadLanguage(languageId);
+	}
+	return languagePromises[languageId];
+}
+
+function registerLanguage(def) {
+	let languageId = def.id;
+
+	languageDefinitions[languageId] = def;
+	monaco.languages.register(def);
+	monaco.languages.onLanguage(languageId, () => {
+		loadLanguage(languageId);
+	});
+}
+
+registerLanguage({
+	id: 'markdown',
+	extensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mdtxt', '.mdtext'],
+	aliases: ['Markdown', 'markdown'],
+	loader: () => import('markdown-language')
+});
+
 
 export default class Notebook extends React.Component {
 
@@ -100,7 +136,9 @@ export default class Notebook extends React.Component {
         const editorLines = this._model.getLinesContent()
         for (let i = 0; i < serializedCells.length; i++) {
             const {line, html} = serializedCells[i]
-            editorLines.splice(line + i, 0, html)
+            if (html) {
+                editorLines.splice(line + i, 0, html)
+            }
         }
         console.log(editorLines)
         this.props.save(editorLines)
@@ -114,6 +152,6 @@ export default class Notebook extends React.Component {
     }
 
     render() {
-        return <div style={{height: 1000}} onKeyDown={this.keyHandler} ref={c => this.monacoRef = c}/>
+        return <div style={{height: 700}} onKeyDown={this.keyHandler} ref={c => this.monacoRef = c}/>
     }
 }

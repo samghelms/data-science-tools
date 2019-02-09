@@ -1,6 +1,6 @@
 import * as monaco from 'monaco-editor'
 
-export const buttonsWidget = (startLineNumber, editorWidth = 100, addOutputCB, getLineNumber) => (
+export const buttonsWidget = (startLineNumber, editorWidth = 1000, addOutputCB, getLineNumber) => (
      {
         domNode: null,
         getId: function() {
@@ -11,10 +11,9 @@ export const buttonsWidget = (startLineNumber, editorWidth = 100, addOutputCB, g
 
             this.domNode = document.createElement('div');
             // this.domNode.innerHTML = 'My content widget';
-            this.domNode.className = 'test'
+            this.domNode.className = 'buttons'
             this.domNode.style.pointerEvents = 'none';
-            // this.domNode.style.background = 'grey';
-            this.domNode.style.width = `${editorWidth}px`;
+            this.domNode.style.width = `1000px`;
             this.domNode.style.display = 'flex';
             this.domNode.style.justifyContent = 'flex-end';
             const internalDomNode = document.createElement('div');

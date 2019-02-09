@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "build:watch": "webpack -w"
+    "watch": "webpack -w"
   },
   "dependencies": {
     "@jupyterlab/outputarea": "^0.19.1",
@@ -15,17 +15,16 @@
     "finder-component": "^0.0.0",
     "js-yaml": "^3.12.1",
     "markdown-notebook-component": "^0.0.0",
+    "monaco-editor": "^0.15.6",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-modal": "^3.8.1",
     "react-notification-system": "^0.2.17",
     "react-svg-buttons": "^0.4.0",
-    "resolve-dir": "^1.0.1",
-    "vscode": "^1.1.28"
+    "resolve-dir": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",

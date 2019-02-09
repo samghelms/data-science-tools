@@ -4,7 +4,7 @@ const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 const ASSET_PATH =  "/imarkdown/static/dist/";
 
 module.exports = {
-  entry: ['@babel/polyfill', './src/main.js'],
+  entry: ['@babel/polyfill', './src/index.js'],
   mode: 'development',
   output: {
     filename: 'bundle.js',
@@ -20,8 +20,7 @@ module.exports = {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env', '@babel/preset-react'],
-              plugins: ['@babel/plugin-syntax-dynamic-import']
+              presets: ['@babel/preset-env', '@babel/preset-react']
             }
           }
         },
@@ -33,16 +32,5 @@ module.exports = {
   },
   plugins: [
     new MonacoWebpackPlugin()
-  ],
-  resolve: {
-    alias: {
-        'vscode': require.resolve('monaco-languageclient/lib/vscode-compatibility')
-    }
-  },
-  node: {
-    fs: 'empty',
-    child_process: 'empty',
-    net: 'empty',
-    crypto: 'empty'
-  }
+  ]
 };

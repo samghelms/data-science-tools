@@ -16,9 +16,9 @@ with open(os.path.join(here, name, "package.json")) as f:
 
 config_d_filepath = os.path.join('jupyter-config',
                                  'jupyter_notebook_config.d',
-                                 'imarkdown_notebooks.json')
-data_files = [('etc/jupyter/jupyter_notebook_config.d', [config_d_filepath]),
-]
+                                 'imarkdown.json')
+
+data_files = [('etc/jupyter/jupyter_notebook_config.d', [config_d_filepath])]
 
 setuptools.setup(
     name=name,

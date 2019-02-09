@@ -6,6 +6,10 @@
 
 ```
 const markdownNotebookComponent = require('markdown-notebook-component');
-
 // TODO: DEMONSTRATE API
+
 ```
+
+# TODOS:
+
+- only use language server for code blocks

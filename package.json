@@ -4,10 +4,14 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "packages/embedded-app/*"
     ],
     "nohoist": [
       "**/nteract/**"
     ]
+  },
+  "dependencies": {
+    "react-router-dom": "^4.3.1"
   }
 }

@@ -1,6 +1,7 @@
 import { buttonsWidget } from './buttonsWidget'
+import CompletionProvider from './CompletionProvider'
 
-const blockBeginRegex = /```[\s]{0,5}[A-Za-z]+$/g
+const blockBeginRegex = /```[\s]{0,5}[A-Za-z]+/g
 const blockEndRegex = /```([\s]+$|$)/g
 
 class Cell {
@@ -13,32 +14,85 @@ class Cell {
         this.zone = null
         this.viewZoneId = null 
         this.overlay = null 
+        this.zoneHeight = 200
         // this.addOutput = this.addOutput.bind(this)
         this.getStartLine = this.getStartLine.bind(this)
-        this.buttonsWidget = buttonsWidget(start, 200, () => this.addOutput(), this.getStartLine)
+        this.buttonsWidget = buttonsWidget(start, 200, () => this.addExecuteOutput(), this.getStartLine)
         this.editor.addContentWidget(this.buttonsWidget)
+
+        this.outputExpanded = false
     }
 
     addSerializedOutput(html, line) {
-        console.log('adding serialized')
-        console.log(html)
-        console.log(line)
+
+        this.outputNode = document.createElement('div')
+        this.outputNode.innerHTML = html
+
+        this._addOutput(this.outputNode, line)
+    }
+
+    addExecuteOutput() {
+        const cellContents = this._model.getValueInRange({startLineNumber: this.start, endLineNumber: this.end})
+        const splitContents = cellContents.split(this._model.getEOL())
+        const header = splitContents[0]
+        const body = splitContents.slice(1,).join(this._model.getEOL());
+        const executeResults = this._kernelManager.execute(header, body);
+        if (executeResults) {
+            this._addOutput(executeResults.node)
+        }
+    }
+
+    _addOutput(nodeToAdd) {
         const this2 = this
         this.editor.changeViewZones(function(changeAccessor) {
-            if (this2.viewZoneId) {
-                // changeAccessor.removeZone(this2.viewZoneId)
-                // TODO: raise an error here
-                return
-            }
-            this2.outputNode = document.createElement('div')
-            this2.outputNode.innerHTML = html
-            this2.zone = {
-                afterLineNumber: line,
-                heightInLines: 5,
-                domNode: this2.outputNode
+            nodeToAdd.style.zIndex = 100;
+            nodeToAdd.style.overflow = 'hidden'
+            // allows interacting with outputs
+            nodeToAdd.onmousedown = (e) => {
+                e.stopPropagation();
             }
 
+            nodeToAdd.onmousemove = (e) => {
+                e.stopPropagation();
+            }
+
+            const margin = document.createElement('div')
+            const btn = document.createElement('button')
+            btn.innerText = 'expand'
+            margin.style.zIndex = 1
+            margin.appendChild(btn)
+
+            // resets to 5 lines after an execution
+            this2.zoneHeight = 100
+            this2.zone = {
+                afterLineNumber: this2.end,
+                heightInPx: this2.zoneHeight,
+                domNode: nodeToAdd,
+                marginDomNode: margin
+            }
+            // remove old zones
+            if (this2.viewZoneId) {
+                changeAccessor.removeZone(this2.viewZoneId)
+            }
             this2.viewZoneId = changeAccessor.addZone(this2.zone)
+    
+            btn.onclick = () => {
+                if (this2.outputExpanded) {
+                    this2.zone.heightInPx = 100
+                    this2.editor.changeViewZones(function(changeAccessor2) {
+                        changeAccessor2.layoutZone(this2.viewZoneId)
+                    })
+                    this2.outputExpanded = false
+                    btn.innerText = 'expand'
+                } else {
+                    this2.zone.heightInPx = nodeToAdd.scrollHeight;
+                    this2.editor.changeViewZones(function(changeAccessor2) {
+                        changeAccessor2.layoutZone(this2.viewZoneId)
+                    })
+                    this2.outputExpanded = true
+                    btn.innerText = 'collapse'
+                }
+            }
         })
     }
 
@@ -49,24 +103,64 @@ class Cell {
             if (this2.viewZoneId) {
                 changeAccessor.removeZone(this2.viewZoneId)
             }
-            // console.log("executing, start", this2.start)
-            // console.log("end", this2.end)
+
             const cellContents = this2._model.getValueInRange({startLineNumber: this2.start, endLineNumber: this2.end})
             const splitContents = cellContents.split(this2._model.getEOL())
             const header = splitContents[0]
-            const body = splitContents.slice(1,).join(this2._model.getEOL())
-            const executeResults = this2._kernelManager.execute(header, body)
-            // this2.outputNode = document.createElement('div')
-            // this2.outputNode.innerHTML = cellContents
-            // this2.outputNode.style.background = 'lightgreen'
-            // this2.outputNode.appendChild(executeResults.node)
-            this2.zone = {
-                afterLineNumber: this2.end,
-                heightInLines: 5,
-                domNode: executeResults.node
+            const body = splitContents.slice(1,).join(this2._model.getEOL());
+            const executeResults = this2._kernelManager.execute(header, body);
+
+            // const container = document.createElement('div')
+            // container.appendChild(executeResults.node)
+
+            // container.style.border = '1px solid black'
+            // container.style.overflow = 'hidden'
+            executeResults.node.style.zIndex = 100;
+            // allows interacting with outputs
+            executeResults.node.onmousedown = (e) => {
+                e.stopPropagation();
             }
 
-            this2.viewZoneId = changeAccessor.addZone(this2.zone)
+            executeResults.node.onmousemove = (e) => {
+                e.stopPropagation();
+            }
+
+            const margin = document.createElement('div')
+            const btn = document.createElement('button')
+            btn.innerText = 'expand'
+            margin.style.zIndex = 1
+            margin.appendChild(btn)
+
+            // resets to 5 lines after an execution
+            this2.zoneHeight = 100
+            if (executeResults) {
+                this2.zone = {
+                    afterLineNumber: this2.end,
+                    heightInPx: this2.zoneHeight,
+                    domNode: executeResults.node,
+                    marginDomNode: margin
+                }
+                this2.viewZoneId = changeAccessor.addZone(this2.zone)
+            }
+            console.log(executeResults)
+            btn.onclick = () => {
+                if (this2.outputExpanded) {
+                    this2.zone.heightInPx = 100
+                    this2.editor.changeViewZones(function(changeAccessor2) {
+                        changeAccessor2.layoutZone(this2.viewZoneId)
+                    })
+                    this2.outputExpanded = false
+                    btn.innerText = 'expand'
+                } else {
+                    this2.zone.heightInPx = executeResults.node.scrollHeight;
+                    this2.editor.changeViewZones(function(changeAccessor2) {
+                        changeAccessor2.layoutZone(this2.viewZoneId)
+                    })
+                    this2.outputExpanded = true
+                    btn.innerText = 'collapse'
+                }
+            }
+
         })
     }
 
@@ -114,6 +208,8 @@ export default class CellsManager {
         this._kernelManager = kernelManager; // Kernels for lack of a better word. Anything that can execute code.
         this.serializeCells = this.serializeCells.bind(this)
         this.serializedOutputs = {}
+        this.inCellValue = this.inCellValue.bind(this)
+        this._completionProvider = new CompletionProvider(this._editor)
     }
 
     addSerializedOutput(serializeOutput, line) {
@@ -255,6 +351,12 @@ export default class CellsManager {
         return Object.values(this._cells).filter(_inCell).length > 0
     }
 
+    inCellValue(lineNum) {
+        // console.log("incell called")
+        const _inCell = (obj) => (obj.contains(lineNum));
+        return Object.values(this._cells).filter(_inCell)
+    }
+
     cellsInside(start, end) {
         const _inCell = (key) => (this._cells[key].start >= start && this._cells[key].end <= end);
         return Object.keys(this._cells).filter(_inCell)
@@ -270,7 +372,10 @@ export default class CellsManager {
     serializeCells() {
         const serializedCells = []
         for (let cell of Object.values(this._cells)) {
-            const serializedContents = cell.zone.domNode.innerHTML.split('\n').join('<br>')
+            let serializedContents = null;
+            if (cell.zone && cell.zone.domNode) {
+                serializedContents = cell.zone.domNode.innerHTML.split('\n').join('&#10;')
+            }
             serializedCells.push({line: cell.end, html: serializedContents})
         }
         return serializedCells
