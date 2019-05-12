@@ -1,0 +1,1 @@
+{"version":3,"file":"InsetProvider.js","sourceRoot":"","sources":["../src/InsetProvider.ts"],"names":[],"mappings":";;AAGA;IACC,iBAAiB,CAAC,QAAsB,EAAE,KAAwB;QACjE,OAAO,IAAI,CAAA;IACZ,CAAC;IAED,gBAAgB,CAAC,SAAoB,EAAE,OAAgB,EAAE,KAAwB;QAChF,OAAO,CAAC,IAAI,GAAG,wBAAwB,CAAA;QACvC,OAAO,IAAI,CAAA;IACZ,CAAC;CACD;AATD,8CASC"}

@@ -2,10 +2,13 @@
   "version": "0.0.0",
   "name": "data-science-tools",
   "private": true,
+  "engines": {
+    "vscode": "^1.25"
+  },
   "workspaces": {
     "packages": [
       "packages/*",
-      "packages/embedded-app/*"
+      "packages/embedded-app/imarkdown_notebooks"
     ],
     "nohoist": [
       "**/nteract/**"

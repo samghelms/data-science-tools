@@ -1,6 +1,6 @@
 const path = require('path');
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
-
+const webpack = require('webpack');
 const ASSET_PATH =  "/imarkdown/static/dist/";
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env', '@babel/preset-react'],
-              plugins: ['@babel/plugin-syntax-dynamic-import']
+              plugins: ['dynamic-import-node', "transform-es2015-modules-commonjs"]
             }
           }
         },
@@ -31,12 +31,16 @@ module.exports = {
         }
       ]
   },
-  plugins: [
-    new MonacoWebpackPlugin()
-  ],
+  // plugins: [
+  //   new MonacoWebpackPlugin(),
+  //   new webpack.ContextReplacementPlugin(
+  //     /vscode*/,
+  //     path.join(__dirname, './client')
+  // )
+  // ],
   resolve: {
     alias: {
-        'vscode': require.resolve('monaco-languageclient/lib/vscode-compatibility')
+      'vscode': require.resolve('monaco-languageclient/lib/vscode-compatibility')
     }
   },
   node: {

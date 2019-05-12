@@ -41,9 +41,9 @@ class LanguageServerWebSocketHandler(websocket.WebSocketHandler):
         thread.start()
 
     def on_message(self, message):
-        print("got message")
-        print(message)
         """Forward client->server messages to the endpoint."""
+        print("===== got message =====")
+        print(json.loads(message))
         self.writer.write(json.loads(message))
 
     def check_origin(self, origin):

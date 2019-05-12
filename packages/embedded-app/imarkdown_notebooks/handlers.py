@@ -45,7 +45,6 @@ class NAppHandler(IPythonHandler):
         page_config.update(self.settings.get('page_config_data', {}))
         page_config.setdefault('appName', config.name)
         page_config.setdefault('appVersion', config.version)
-
         asset_url = config.asset_url
 
         if asset_url is "":
@@ -69,6 +68,8 @@ class NAppHandler(IPythonHandler):
             contents_path=path,
             page=self.page,
         )
+
+        print(config)
 
         template = self.render_template('index.html', **config)
         print(template)

@@ -2,23 +2,16 @@
 
 A monorepo for data science tools (under construction). 
 
-I apologize in advance for the monorepo -- for now the components are not set up to be distributed.
-
+` `
 
 # TODOS:
 
-- kernel manager
-- selecting kernels?
-- creating new
-- save outputs
-- scrollable/expandable outputs
-- way to select jupyter server to connect to
-- jupyter nb extension
+- Clean up outputs
 - electron app
-- allow you to reload the same page
 - open up the file explorer so that it is expanded to current folder (or last state)
 - icons not showing up for jupyter notebooks
 - add a built in terminal (this is really useful if there are file system operations not implemented with the gui)
+- Create a terminal that can display rich outputs
 - add some sort of file search to the finder
 - rename and save functionality
 - distribute as a jupyter extension
@@ -27,5 +20,8 @@ I apologize in advance for the monorepo -- for now the components are not set up
 - start kernels on execute if they aren't already running
 - add new kernel option
 - persist kernel info / app state
-
-
+- Build an example that can run fully in the browser via iodide
+- Build documentation using docz
+- Look into integration with the theia ide
+- R kernel
+- SQL kernel (ODBC support - language server will have to come later)

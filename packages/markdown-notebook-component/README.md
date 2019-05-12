@@ -13,3 +13,7 @@ const markdownNotebookComponent = require('markdown-notebook-component');
 # TODOS:
 
 - only use language server for code blocks
+
+# NOTES
+
+- currently, calling print prints to the javascript console

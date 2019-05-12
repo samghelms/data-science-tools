@@ -17,10 +17,22 @@ export default class KernelManager {
 
     findMatchingKernel(header) {
         for (let k of this._kernels) {
-            console.log(k)
             if (k.match(header)) {
                 return k;
             }
+        }
+        return null;
+    }
+
+    startLSIfNeeded(header, editor) {
+        const kernel = this.findMatchingKernel(header);
+        if (kernel) kernel.startLSIfNeeded(header, editor);
+    }
+
+    async getLanguageServerProvider(header) {
+        const kernel = this.findMatchingKernel(header);
+        if (kernel) {
+            return await kernel.getLanguageServerProvider(header);
         }
         return null;
     }
@@ -29,7 +41,6 @@ export default class KernelManager {
         this._kernels.push(newKernel);
     }
 
-    
     list() {
         return this._kernels.map((k, i) => k.reactElement(i))
     }

@@ -1,7 +1,9 @@
 {
+    "extends": "../../tsconfig.base.json",
     "compilerOptions": {
-      "module": "amd",
+      "module": "commonjs",
       "outDir": "lib",
+      "rootDir": "src",
       "target": "es5",
       "moduleResolution": "node",
       "lib": [
@@ -12,6 +14,9 @@
       ]
     },
     "include": [
-      "src/*.ts"
+      "src"
+    ],
+    "files": [
+      "../../node_modules/monaco-editor/monaco.d.ts"
     ]
   }

@@ -1,0 +1,32 @@
+{
+  "name": "imarkdown-language-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "> TODO: description",
+  "author": "Samuel Helms <samghelms@gmail.com>",
+  "homepage": "https://github.com/samghelms/data-science-tools#readme",
+  "license": "ISC",
+  "main": "lib/imarkdown-language-server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samghelms/data-science-tools.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build:watch": "tsc -w",
+    "start": "node lib/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/samghelms/data-science-tools/issues"
+  },
+  "dependencies": {
+    "vscode-languageserver": "^5.3.0-next.1"
+  }
+}

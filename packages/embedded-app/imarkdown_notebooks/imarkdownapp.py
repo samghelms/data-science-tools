@@ -64,24 +64,6 @@ class IMarkdownApp(NotebookApp):
             if not self.nbserver_extensions.get(EXT_NAME, False):
                 self.log.warn(msg)
                 load_jupyter_server_extension(self)
-            # with cmd_in_new_dir(PACKAGE_DIR):
-            #     p = Popen(webpack_hot["command"])
-            #     self.log.info('waiting for the hot webpack server to start')
-            #     # Wait a little bit to allow the initial command to run
-            #     # NOTE: It would be better if we could run this on a thread and
-            #     # inform the dev server when it has closed using proc.wait()
-            #     # and an onExit callback
-            #     time.sleep(3)
-            #     exit_code = p.poll()
-            #     if exit_code is None:
-            #         # The process is up, we're (possibly) good
-            #         pass
-            #     else:
-            #         raise Exception(
-            #             "Webpack dev server exited - return code {exit_code}".format(exit_code=exit_code))
-
-            #     # Now wait for webpack to have the initial bundle mostly ready
-            #     time.sleep(5)
 
 
 main = launch_new_instance = IMarkdownApp.launch_instance

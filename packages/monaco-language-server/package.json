@@ -1,0 +1,28 @@
+{
+  "name": "monaco-language-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "> TODO: description",
+  "author": "Samuel Helms <samghelms@gmail.com>",
+  "homepage": "https://github.com/samghelms/data-science-tools#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samghelms/data-science-tools.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/samghelms/data-science-tools/issues"
+  }
+}

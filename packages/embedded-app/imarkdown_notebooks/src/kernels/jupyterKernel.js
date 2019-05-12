@@ -4,8 +4,9 @@ import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
 } from '@jupyterlab/rendermime';
-import { Kernel } from '@jupyterlab/services';
+import { Kernel, TerminalSession } from '@jupyterlab/services';
 import * as yaml from 'js-yaml';
+import CompletionProvider from 'markdown-notebook-component/lib/CompletionProvider'
 
 class JupyterKernelDisplay extends React.Component {
     constructor(props) {
@@ -67,12 +68,58 @@ class JupyterKernelDisplay extends React.Component {
 }
 
 export default class JupyterKernel {
-    constructor(settings) {
+    // TODO: language server neeeds a port range
+    // TODO: handle situations where language servers die or won't start (escape hatch at the very least)
+    constructor(settings, languageServerPort = 3000) { 
         this._settings = settings
         this._default = Kernel.getSpecs(settings).then(kernelSpecs => kernelSpecs.default)
         this.kernel = null
         this.beginRegex = /^```python/
         this._kernelCache = {}
+        this._languageServerPort = languageServerPort
+        this._languageServers = {}
+        this._completionProvider = new CompletionProvider()
+    }
+
+    startLanguageServer(port, pythonPath) {
+        // Create a named terminal session and send some data.
+        console.log('pythonPath')
+        console.log(pythonPath)
+        // const options = {
+        //     serverSettings: this._settings
+        // };
+        // TerminalSession.startNew(this._settings).then(session => {
+        //     console.log("session")
+        //     console.log(session)
+        //     session.send({ type: 'stdin', content: [`${pythonPath} `] });
+        // });
+        // TODO: prompt user if connection doesn't work (say you're on a remote machine with ports that are closed off)
+        // Q: how would this work with ssh?
+        // Potential solution: one server for kernel + language services
+    }
+
+    async getParsedHeader(header) {
+        const parsedHeader = this.parseHeader(header)
+        let kernelName = null;
+        if (parsedHeader && 'kernel' in parsedHeader) {
+            kernelName = parsedHeader['kernel']
+        } else {
+            kernelName = await this._default;
+        }
+        return kernelName
+    }
+
+    async getLanguageServerProvider(header) {
+        // const kernelName = await this.getParsedHeader(header);
+        // console.log("kernelName", kernelName)
+        // if (kernelName in this._languageServers) {
+        //     return this._languageServers[kernelName];
+        // }
+        return this._completionProvider.languageClient;
+    }
+
+    async setLanguageServerProvider(provider, id) {
+        this.languageServers[id] = provider
     }
 
     async getKernelName(header) {
@@ -100,7 +147,6 @@ export default class JupyterKernel {
         // Get document, or throw exception on error
         try {
             return yaml.safeLoad(headerStart);
-            console.log(doc);
         } catch (e) {
             console.log(e);
             return null;
@@ -129,8 +175,7 @@ export default class JupyterKernel {
 
     async getSpecs() {
         Kernel.getSpecs(this._settings).then(kernelSpecs => {
-            console.log('Default spec:', kernelSpecs.default);
-            console.log('Available specs', Object.keys(kernelSpecs.kernelspecs));
+            console.log('specs', Object.keys(kernelSpecs));
         })
     }
 
@@ -145,7 +190,6 @@ export default class JupyterKernel {
 
         const runningKernels = await this.getRunning();
 
-        this.getSpecs()
         let runningKernel;
         if ((runningKernels.length > 0) && (kernelName in this._kernelCache)) {
             const id = this._kernelCache[kernelName]
@@ -173,6 +217,36 @@ export default class JupyterKernel {
         console.log("matching header", header)
         return header.match(this.beginRegex) !== null;
     }
+
+    // async startLSIfNeeded(header, editor) {
+    //     // const parsedHeader = this.parseHeader(header)
+    //     // let kernelName = null;
+    //     // if (parsedHeader && 'kernel' in parsedHeader) {
+    //     //     kernelName = parsedHeader['kernel']
+    //     // } else {
+    //     //     kernelName = await this._default;
+    //     // }
+
+    //     // if (this._languageServers.includes(kernelName)) {
+    //     //     return
+    //     // }
+
+    //     // const pythonPath = await Kernel.getSpecs(this._settings).then(kernelSpecs => {
+    //     //     // console.log('Default spec:', kernelSpecs.default);
+    //     //     const match = Object.keys(kernelSpecs.kernelspecs).filter(n => n === kernelName)
+    //     //     if (match.length > 0) {
+    //     //         return kernelSpecs.kernelspecs[match[0]].argv[0]
+    //     //     }
+    //     //     return Promise.resolve(null);
+    //     // })
+    //     // if (pythonPath) {
+    //     //     this.startLanguageServer(this._languageServerPort, pythonPath);
+    //     //     this._languageServers.push(kernelName);
+    //     // }
+    //     console.log("starting ls")
+    //     const parsedHeader = await this.getParsedHeader(header);
+    //     this._completionProvider = new CompletionProvider(editor, parsedHeader);
+    // }
 
     async close() {
         const runningKernels = await this.getRunning();

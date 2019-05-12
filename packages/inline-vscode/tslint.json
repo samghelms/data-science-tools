@@ -1,0 +1,10 @@
+{
+	"rules": {
+		"indent": [true, "tabs"],
+		"semicolon": [true, "always"]
+	},
+	"exclude": [
+		"node_modules",
+		"../../node_modules"
+	]
+}
