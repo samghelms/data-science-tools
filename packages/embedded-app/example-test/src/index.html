@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>monaco-react-notebook</title>
+    <meta name="description" content="">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" lazyload> -->
+    <script id="jupyter-config-data" type="application/json">{
+      "baseUrl": "{{ base_url }}",
+      "wsUrl": "{{ ws_url }}",
+      "publicUrl": "{{ public_url }}",
+      "contentsPath": "{{ contents_path }}",
+      "assetUrl": "{{ asset_url }}",
+      "page": "{{ page }}",
+      "terminalsAvailable": "true"
+    }</script>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="main.bundle.js"></script>
+  </body>
+</html>

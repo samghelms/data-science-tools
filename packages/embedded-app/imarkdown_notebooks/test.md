@@ -1,7 +1,0 @@
-```python
-d
-```
-
-```python
-d
-```

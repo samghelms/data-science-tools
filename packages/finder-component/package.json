@@ -9,12 +9,20 @@
   "author": "Samuel Helms",
   "homepage": "",
   "license": "ISC",
-  "main": "src/Finder.js",
+  "main": "lib/Finder.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
     "eventemitter3": "^3.1.0",
+    "react": "^16.8.6",
     "x-is-array": "^0.1.0",
     "xtend": "^4.0.1"
   }

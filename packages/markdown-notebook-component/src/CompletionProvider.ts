@@ -5,21 +5,24 @@
  * Licensed under the MIT License. See License.txt in the project root for license information.
  * ------------------------------------------------------------------------------------------ */
 import { listen, MessageConnection } from '@sourcegraph/vscode-ws-jsonrpc'; 
+
 import {
     CloseAction, ErrorAction,
-    MonacoServices
+    MonacoLanguageClient,
+    MonacoServices,
+    // createConnection
 } from 'monaco-languageclient';
 import { createConnection } from './connection';
-import { MonacoLanguageClient } from './MonacoLanguageClient';
-import { editor } from 'monaco-editor';
+// import { MonacoLanguageClient } from './MonacoLanguageClient';
+// import * as monaco from 'monaco-editor-core';
 import CellsManager from './CellsManager';
 
-const normalizeUrl = require('normalize-url');
+// const normalizeUrl = require('normalize-url');
 const ReconnectingWebSocket = require('reconnecting-websocket');
 
 function createUrl() {
     const protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-    return normalizeUrl(`ws://localhost:3000/python`);
+    return `ws://${location.host}/imarkdown/language-server`;
 }
 
 function createWebSocket(url: string): WebSocket {
@@ -51,6 +54,7 @@ function createLanguageClient(connection: MessageConnection, cellManager: CellsM
         // create a language client connection from the JSON RPC connection on demand
         connectionProvider: {
             get: (errorHandler, closeHandler) => {
+                console.log("get called")
                 return Promise.resolve(createConnection(connection as any, errorHandler, closeHandler, cellManager))
             }
         }
@@ -59,7 +63,7 @@ function createLanguageClient(connection: MessageConnection, cellManager: CellsM
 
 export default class CompletionProvider {
     languageClient: MonacoLanguageClient;
-    constructor(editor: editor.IStandaloneCodeEditor, cellManager: CellsManager) {
+    constructor(_editor: monaco.editor.IStandaloneCodeEditor, cellManager: CellsManager) {
         const url = createUrl()
         console.log(`connecting to ${url}`)
         const webSocket = createWebSocket(url);
@@ -78,12 +82,23 @@ export default class CompletionProvider {
             webSocket,
             onConnection: connection => {
                 console.log("listening")
+
                 // this2.connection = connection;
                 if (cellManager) {
-                    MonacoServices.install(editor);
-                    this2.languageClient = createLanguageClient(connection, cellManager)
-                    const disposable = this2.languageClient.start();
-                    connection.onClose(() => disposable.dispose());
+                console.log("installing")
+                // console.log(_editor)
+                MonacoServices.install(_editor);
+                console.log(MonacoServices.get())
+                console.log("services get")
+                // console.log(Services.get())
+                // Services.install(MonacoServices.get())
+                let glbl = window as any;
+                // glbl[Symbol("test")] = "testdfdsaf"
+                // (<any>window)['test'] = 'testdfasdf'
+                // console.log(global[Symbol("Services")])
+                this2.languageClient = createLanguageClient(connection, cellManager)
+                const disposable = this2.languageClient.start();
+                connection.onClose(() => disposable.dispose());
                 }
             }
         });

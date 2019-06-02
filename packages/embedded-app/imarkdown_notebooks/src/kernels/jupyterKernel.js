@@ -7,6 +7,7 @@ import {
 import { Kernel, TerminalSession } from '@jupyterlab/services';
 import * as yaml from 'js-yaml';
 import CompletionProvider from 'markdown-notebook-component/lib/CompletionProvider'
+import { ISanitizer } from '@jupyterlab/apputils'
 
 class JupyterKernelDisplay extends React.Component {
     constructor(props) {
@@ -64,6 +65,14 @@ class JupyterKernelDisplay extends React.Component {
                 </div>
             )): null}
         </div>
+    }
+}
+
+
+class Sanitizer {
+    sanitize(dirty, options) {
+        let clean = dirty.replace('"dataframe"', '"dataframe mdl-data-table mdl-js-data-table mdl-shadow--2dp"')
+        return clean
     }
 }
 
@@ -156,13 +165,18 @@ export default class JupyterKernel {
 
     execute(header, code) {
         const model = new OutputAreaModel();
-        const rendermime = new RenderMimeRegistry({ initialFactories });
+        const rendermime = new RenderMimeRegistry({ initialFactories, sanitizer: new Sanitizer() });
         const outputArea = new SimplifiedOutputArea({ model, rendermime });
 
         this.getOrStartKernel(header).then(kernel => {
             const future = kernel.requestExecute({ code: code });
             outputArea.future = future;
         })
+
+        outputArea.onChildAdded = (msg) => {
+            // msg.child.removeClass('jp-OutputArea-output')
+            msg.child.removeClass('jp-RenderedHTMLCommon')
+        }
 
         return outputArea
     }

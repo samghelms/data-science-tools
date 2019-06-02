@@ -1,10 +1,10 @@
+/// <reference types="monaco-editor-core/monaco" />
 import CompletionProvider from './CompletionProvider';
-import { editor } from 'monaco-editor';
 declare class Cell {
     start: number;
     end: number;
-    editor: editor.IStandaloneCodeEditor;
-    _model: editor.ITextModel;
+    editor: monaco.editor.IStandaloneCodeEditor;
+    _model: monaco.editor.ITextModel;
     _kernelManager: any;
     zone: {
         afterLineNumber: number;
@@ -17,11 +17,11 @@ declare class Cell {
     zoneHeight: number;
     buttonsWidget: any;
     outputExpanded: boolean;
-    constructor(start: number, end: number, editor: editor.IStandaloneCodeEditor, model: editor.ITextModel, kernelManager: any);
+    constructor(start: number, end: number, editor: monaco.editor.IStandaloneCodeEditor, model: monaco.editor.ITextModel, kernelManager: any);
     getHeader(): string;
     getLanguageServerProvider(): Promise<any>;
     addSerializedOutput(html: string): void;
-    addExecuteOutput(): void;
+    addExecuteOutput(line?: number): void;
     clearExecuteOutput(): void;
     _addOutput(nodeToAdd: HTMLDivElement): void;
     getStartLine(): number;
@@ -31,16 +31,18 @@ declare class Cell {
     dispose(): void;
 }
 export default class CellsManager {
-    _model: editor.ITextModel;
-    _editor: editor.IStandaloneCodeEditor;
+    _model: monaco.editor.ITextModel;
+    _editor: monaco.editor.IStandaloneCodeEditor;
     _cells: Map<string, Cell>;
     _kernelManager: any;
     serializedOutputs: Map<string, string>;
     _completionProvider: CompletionProvider;
-    constructor(model: editor.ITextModel, editor: editor.IStandaloneCodeEditor, kernelManager: any);
+    constructor(model: monaco.editor.ITextModel, editor: monaco.editor.IStandaloneCodeEditor, kernelManager: any);
+    executeCursorCell(): void;
+    executeCursorLine(): void;
     addSerializedOutput(serializeOutput: string, line: number): void;
     addCell(start: number, end: number): void;
-    updateCells(changeEvent: editor.IModelContentChangedEvent): void;
+    updateCells(changeEvent: monaco.editor.IModelContentChangedEvent): void;
     setLanguageServerProvider(provider: any, selectorId: string): void;
     getTypeForLine(): string;
     inCell(lineNum: number): boolean;
@@ -50,7 +52,7 @@ export default class CellsManager {
         key: string;
         value: Cell;
     };
-    onCellBoundary(line: number): 2 | 1 | 0;
+    onCellBoundary(line: number): 1 | 0 | 2;
     disposeCells(): void;
     serializeCells(): {
         line: number;

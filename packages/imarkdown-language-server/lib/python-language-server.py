@@ -42,18 +42,15 @@ class LanguageServerWebSocketHandler(websocket.WebSocketHandler):
 
     def on_message(self, message):
         """Forward client->server messages to the endpoint."""
-        print("===== got message =====")
-        print(json.loads(message))
         msg = json.loads(message)
         params = msg['params']
         method = msg['method']
 
         # if method == 'initialize':
 
-        filter_methods = ['textDocument/codeLens', 'textDocument/completion']
+        filter_methods = ['textDocument/codeLens', 'textDocument/completion', 'textDocument/signatureHelp', 'textDocument/codeAction']
 
         if 'type' in params and params['type'] == 'python' and method in filter_methods:
-            print("python type")
             self.writer.write(msg)
         elif method not in filter_methods:
             self.writer.write(msg)
@@ -68,7 +65,6 @@ class LanguageServerWebSocketHandler(websocket.WebSocketHandler):
 if __name__ == "__main__":
     app = web.Application([
         (r"/python", LanguageServerWebSocketHandler),
-        # (r"/", LanguageServerWebSocketHandler),
     ])
     app.listen(3000, address='localhost')
     ioloop.IOLoop.current().start()

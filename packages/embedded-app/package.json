@@ -1,19 +1,19 @@
 {
-    "name": "imarkdown",
-    "version": "0.0.0",
-    "description": "interactive markdown notebooks",
-    "scripts": {
-      "build:python": "python setup.py sdist && python setup.py bdist_wheel",
-      "upload:pypi": "twine upload dist/*",
-      "prebuild:python": "rimraf dist",
-      "publish": "echo 'not really publishing'"
-    },
-    "publishConfig": {
-      "access": "public",
-      "dry-run": true
-    },
-    "private": true,
-    "repository": "",
-    "author": "Samuel Helms",
-    "license": "MIT"
-  }
+  "name": "imarkdown",
+  "version": "0.0.0",
+  "description": "interactive markdown notebooks",
+  "scripts": {
+    "build:python": "python setup.py sdist && python setup.py bdist_wheel",
+    "upload:pypi": "twine upload dist/*",
+    "prebuild:python": "rimraf dist",
+    "publish": "echo 'not really publishing'"
+  },
+  "publishConfig": {
+    "access": "public",
+    "dry-run": true
+  },
+  "private": true,
+  "repository": "",
+  "author": "Samuel Helms",
+  "license": "MIT"
+}

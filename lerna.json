@@ -1,8 +1,12 @@
 {
   "name": "root",
   "version": "independent",
-  "npmClient": "yarn",
-  "useWorkspaces": true,
+  "npmClient": "npm",
+  "packages": [
+    "packages/*",
+    "packages/embedded-app/*"
+  ],
+  "useWorkspaces": false,
   "private": true,
   "devDependencies": {
     "lerna": "^3.8.0"

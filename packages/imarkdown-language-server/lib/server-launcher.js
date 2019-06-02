@@ -16,6 +16,7 @@ function launch(socket) {
     var pythonServerPath = path.resolve(__dirname, 'python-language-server.py');
     var socketConnection = server.createConnection(reader, writer, function () { return console.log("created"); });
     var serverConnection = server.createServerProcess('python-ls', 'python', [pythonServerPath]);
+    // serverConnection.forward()
     server.forward(socketConnection, serverConnection, function (message) {
         if (rpc.isRequestMessage(message)) {
             if (message.method === lsp.InitializeRequest.type.method) {

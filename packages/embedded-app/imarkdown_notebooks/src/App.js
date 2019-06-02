@@ -4,11 +4,11 @@ import React, {Component} from 'react'
 import KernelManager from './kernelManager'
 import JupyterKernel from './kernels/jupyterKernel'
 import { KernelMessage, Kernel, ServerConnection } from '@jupyterlab/services';
-import Finder from 'finder-component';
 import JupyterFSProvider from './jupyterFSProvider'
 import Nav from './Nav'
 import ReactModal from 'react-modal';
 import Notebook from 'markdown-notebook-component'
+import Finder from 'finder-component';
 import NotificationSystem from 'react-notification-system';
 
 class App extends Component {

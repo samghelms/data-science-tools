@@ -1,9 +1,5 @@
 import { buttonsWidget } from './buttonsWidget'
 import CompletionProvider from './CompletionProvider'
-import { IRange, editor } from 'monaco-editor';
-// import { MessageConnection } from '@sourcegraph/vscode-ws-jsonrpc'; 
-import { configureLanguageServer } from './monacoLanguageServer';
-import { MonacoLanguageClient } from 'monaco-languageclient';
 
 const blockBeginRegex = /```[\s]{0,5}[A-Za-z]+/g
 const blockEndRegex = /```([\s]+$|$)/g
@@ -11,8 +7,8 @@ const blockEndRegex = /```([\s]+$|$)/g
 class Cell {
     start: number;
     end: number;
-    editor: editor.IStandaloneCodeEditor;
-    _model: editor.ITextModel;
+    editor: monaco.editor.IStandaloneCodeEditor;
+    _model: monaco.editor.ITextModel;
     _kernelManager: any; // TODO: update type definition
     zone: {
         afterLineNumber: number,
@@ -26,7 +22,7 @@ class Cell {
     buttonsWidget: any; // TODO add type definition here... maybe lol
     outputExpanded: boolean;
     // TODO kernel manager type
-    constructor(start: number, end: number, editor: editor.IStandaloneCodeEditor, model: editor.ITextModel, kernelManager: any) {
+    constructor(start: number, end: number, editor: monaco.editor.IStandaloneCodeEditor, model: monaco.editor.ITextModel, kernelManager: any) {
         this.start = start
         this.end = end
         this.editor = editor
@@ -59,15 +55,34 @@ class Cell {
         this.outputNode = document.createElement('div')
         this.outputNode.innerHTML = html
 
+        console.log("adding serialized output");
+        console.log(this.outputNode)
+
         this._addOutput(this.outputNode)
     }
 
-    addExecuteOutput() {
-        const getRange: IRange = {startLineNumber: this.start, endLineNumber: this.end, startColumn: null, endColumn: null};
+    addExecuteOutput(line?: number) {
+        let start;
+        let end;
+        if (line) {
+            start = line;
+            end = line + 1;
+        } else {
+            start = this.start
+            end = this.end
+        }
+        const getRange: monaco.IRange = {startLineNumber: start, endLineNumber: end, startColumn: null, endColumn: null};
         const cellContents = this._model.getValueInRange(getRange);
-        const splitContents = cellContents.split(this._model.getEOL())
-        const header = splitContents[0]
-        const body = splitContents.slice(1,).join(this._model.getEOL());
+        let header;
+        let body;
+        if (line) {
+            header = this.getHeader()
+            body = cellContents;
+        } else {
+            const splitContents = cellContents.split(this._model.getEOL())
+            header = splitContents[0]
+            body = splitContents.slice(1,).join(this._model.getEOL());
+        }
         const executeResults = this._kernelManager.execute(header, body);
         if (executeResults) {
             this._addOutput(executeResults.node)
@@ -84,6 +99,8 @@ class Cell {
     }
 
     _addOutput(nodeToAdd: HTMLDivElement) {
+        console.log(nodeToAdd)
+        console.log(nodeToAdd.childNodes)
         const this2 = this
         this.editor.changeViewZones(function(changeAccessor) {
             nodeToAdd.style.zIndex = "100";
@@ -101,14 +118,24 @@ class Cell {
             const btn = document.createElement("button");
             btn.innerText = "expand";
             margin.style.zIndex = "1";
-            margin.appendChild(btn)
+            margin.appendChild(btn);
+
+            // nodeToAdd.style.border = '5px solid black';
+            const outCont = document.createElement("div");
+            outCont.style.zIndex = "100";
+            outCont.style.borderBottom = '1px solid black';
+            outCont.style.overflow = 'hidden';
+            outCont.className = 'output-area'
+            // outCont.style.borderBottom = '1px solid black';
+
+            outCont.appendChild(nodeToAdd);
 
             // resets to 5 lines after an execution
             this2.zoneHeight = 100
             this2.zone = {
                 afterLineNumber: this2.end,
                 heightInPx: this2.zoneHeight,
-                domNode: nodeToAdd,
+                domNode: outCont,
                 marginDomNode: margin
             }
             // remove old zones
@@ -175,14 +202,14 @@ class Cell {
 }
 
 export default class CellsManager {
-    _model: editor.ITextModel;
-    _editor: editor.IStandaloneCodeEditor;
+    _model: monaco.editor.ITextModel;
+    _editor: monaco.editor.IStandaloneCodeEditor;
     _cells: Map<string, Cell>
     _kernelManager: any; // TODO: add type for _kernelManager
     serializedOutputs: Map<string, string>;
     _completionProvider: CompletionProvider;
     // TODO: kernelmanager type
-    constructor(model: editor.ITextModel, editor: editor.IStandaloneCodeEditor, kernelManager: any) {
+    constructor(model: monaco.editor.ITextModel, editor: monaco.editor.IStandaloneCodeEditor, kernelManager: any) {
         console.log('CellsManager constructor call =======')
         this._model = model;
         this._editor = editor;
@@ -195,6 +222,24 @@ export default class CellsManager {
         this._completionProvider = new CompletionProvider(editor, this);
         this.getTypeForLine = this.getTypeForLine.bind(this);
         // configureLanguageServer(this);
+        this.executeCursorCell = this.executeCursorCell.bind(this)
+        this.executeCursorLine = this.executeCursorLine.bind(this)
+    }
+
+    executeCursorCell() {
+        const cell = this.cellContaining(this._editor.getPosition().lineNumber)
+        if (cell.value) {
+            cell.value.addExecuteOutput()
+        }
+    }
+
+    executeCursorLine() {
+        const line = this._editor.getPosition().lineNumber
+        const cell = this.cellContaining(line)
+        console.log("executeCursorLine")
+        if (cell.value) {
+            cell.value.addExecuteOutput(line)
+        }
     }
 
     addSerializedOutput(serializeOutput: string, line: number) {
@@ -202,16 +247,21 @@ export default class CellsManager {
     }
 
     addCell(start: number, end: number) {
+        console.log("add cell called")
+        console.log(end)
+        console.log(this.serializedOutputs)
         const newCell = new Cell(start, end, this._editor, this._model, this._kernelManager);
-        if (end in this.serializedOutputs) {
-            newCell.addSerializedOutput(this.serializedOutputs.get(end.toString()))
+        const endStr = end.toString()
+        if (this.serializedOutputs.has(endStr)) {
+            console.log("addSerializedOutput")
+            newCell.addSerializedOutput(this.serializedOutputs.get(endStr))
         }
         this._cells.set(start.toString(), newCell)
     }
 
-    updateCells(changeEvent: editor.IModelContentChangedEvent) {
+    updateCells(changeEvent: monaco.editor.IModelContentChangedEvent) {
         //TODO: add a check for the start line being on a cell boundary, handle creating/destroying cells and language servers there
-        changeEvent.changes.map((ch) => {
+        changeEvent.changes.map((ch: any) => {
             // console.log(ch.text.split('\n'))
             const newLines = ch.text.split(this._model.getEOL())
             const newLinesLength = newLines.length - 1;
@@ -302,7 +352,7 @@ export default class CellsManager {
                     if (startTest) {
                         // console.log("start test triggered")
                         // search forwards for an end mark
-                        const getRange: IRange = {
+                        const getRange: monaco.IRange = {
                             startLineNumber: startLine + 1, 
                             endLineNumber: this._model.getLineCount() + 1,
                             endColumn: null,
@@ -321,7 +371,7 @@ export default class CellsManager {
                             }
                         }
                     } else if (endTest) {
-                        const getRange: IRange = {
+                        const getRange: monaco.IRange = {
                             startLineNumber: 0, 
                             endLineNumber: startLine,
                             endColumn: null,
@@ -453,6 +503,7 @@ export default class CellsManager {
     // }
 
     serializeCells() {
+        console.log('serializing cells')
         const serializedCells = []
         for (let cell of Array.from(this._cells.values())) {
             let serializedContents = null;

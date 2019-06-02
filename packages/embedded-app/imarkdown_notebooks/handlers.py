@@ -21,18 +21,28 @@ from traitlets import HasTraits, Unicode, Bool
 
 from . import PACKAGE_DIR
 
+import logging
+import subprocess
+import threading
+from pyls_jsonrpc import streams
+from tornado import ioloop, process, web, websocket
+
+
+log = logging.getLogger(__name__)
+
+
 FILE_LOADER = FileSystemLoader(PACKAGE_DIR)
 
 class NAppHandler(IPythonHandler):
     """Render the nteract view"""
     def initialize(self, config, page):
-        print('initializing')
+        # print('initializing')
         self.nteract_config = config
         self.page = page
 
     @web.authenticated
     def get(self, path="/"):
-        print("handling a get request")
+        # print("handling a get request")
         config = self.nteract_config
         settings_dir = config.settings_dir
         assets_dir = config.assets_dir
@@ -69,15 +79,63 @@ class NAppHandler(IPythonHandler):
             page=self.page,
         )
 
-        print(config)
-
         template = self.render_template('index.html', **config)
-        print(template)
         self.write(template)
+        
 
     def get_template(self, name):
         return FILE_LOADER.load(self.settings['jinja2_env'], name)
 
+
+class LanguageServerWebSocketHandler(websocket.WebSocketHandler):
+    """Setup tornado websocket handler to host an external language server."""
+
+    writer = None
+
+    def open(self, *args, **kwargs):
+        log.info("Spawning pyls subprocess")
+
+        # Create an instance of the language server
+        proc = process.Subprocess(
+            ['pyls', '-v'],
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE
+        )
+
+        # Create a writer that formats json messages with the correct LSP headers
+        self.writer = streams.JsonRpcStreamWriter(proc.stdin)
+
+        # Create a reader for consuming stdout of the language server. We need to
+        # consume this in another thread
+        def consume():
+            # Start a tornado IOLoop for reading/writing to the process in this thread
+            ioloop.IOLoop()
+            reader = streams.JsonRpcStreamReader(proc.stdout)
+            reader.listen(lambda msg: self.write_message(json.dumps(msg)))
+
+        thread = threading.Thread(target=consume)
+        thread.daemon = True
+        thread.start()
+
+    def on_message(self, message):
+        """Forward client->server messages to the endpoint."""
+        msg = json.loads(message)
+        params = msg['params']
+        method = msg['method']
+
+        filter_methods = ['textDocument/codeLens', 'textDocument/completion', 'textDocument/signatureHelp', 'textDocument/codeAction']
+
+        print(msg)
+        if 'type' in params and params['type'] == 'python' and method in filter_methods:
+            self.writer.write(msg)
+        elif method not in filter_methods:
+            self.writer.write(msg)
+        # else:
+        # self.writer.write(msg)
+        
+
+    def check_origin(self, origin):
+        return True
 
 def add_handlers(web_app, config):
     """Add the appropriate handlers to the web app.
@@ -119,6 +177,7 @@ def add_handlers(web_app, config):
         (url + r"/static/(.*)", FileFindHandler, {
             'path': assets_dir
         }),
+        (url + r"/language-server/?", LanguageServerWebSocketHandler, {}),
     ]
 
     web_app.add_handlers(".*$", handlers)

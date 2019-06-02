@@ -105,7 +105,7 @@ export function createConnection(connection: MessageConnection, errorHandler: Co
 
         sendRequest: <R>(type: string | RPCMessageType, ...params: any[]): Thenable<R> => {
             console.log("sending request")
-            console.log(params)
+            // console.log(params)
             // nasty nasty hack to inject the type of language code we are sending to the language server(s)
             const o = params[0]
             let language = null;
@@ -115,7 +115,7 @@ export function createConnection(connection: MessageConnection, errorHandler: Co
 
             let obj = {'type': language, ...o}
             params[0] = obj
-            console.log(params)
+            // console.log(params)
             return connection.sendRequest(Is.string(type) ? type : type.method, ...params)
         },
 
@@ -125,7 +125,7 @@ export function createConnection(connection: MessageConnection, errorHandler: Co
             //     console.log(params)
             //     handler(...params)
             // }
-            console.log("request received")
+            // console.log("request received")
             connection.onRequest(Is.string(type) ? type : type.method, handler)
             // connection.
         },
@@ -142,10 +142,10 @@ export function createConnection(connection: MessageConnection, errorHandler: Co
 
         onLogMessage: (handler: NotificationHandler<LogMessageParams>) => connection.onNotification(LogMessageNotification.type, handler),
         onShowMessage: (handler: NotificationHandler<ShowMessageParams>) => {
-            console.log("onShowMessage received")
+            // console.log("onShowMessage received")
             const handlerWrapper = (params: any) => {
-                console.log("onShowMessage called")
-                console.log(params)
+                // console.log("onShowMessage called")
+                // console.log(params)
                 handler(params)
             }
             connection.onNotification(ShowMessageNotification.type, handlerWrapper)
@@ -161,7 +161,7 @@ export function createConnection(connection: MessageConnection, errorHandler: Co
         didSaveTextDocument: (params: DidSaveTextDocumentParams) => connection.sendNotification(DidSaveTextDocumentNotification.type, params),
 
         onDiagnostics: (handler: NotificationHandler<PublishDiagnosticsParams>) => {
-            console.log("diagnostics received")
+            // console.log("diagnostics received")
             connection.onNotification(PublishDiagnosticsNotification.type, handler)
         },
 

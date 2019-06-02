@@ -4,7 +4,7 @@
  */
 'use strict';
 
-var document = require('global/document');
+// var document = require('global/document');
 var isArray = require('x-is-array');
 
 /**

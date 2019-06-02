@@ -6,22 +6,22 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const vscode_json_languageservice_1 = require("vscode-json-languageservice");
-const c2p = __importStar(require("vscode-languageclient/lib/codeConverter"));
-const p2c = __importStar(require("vscode-languageclient/lib/protocolConverter"));
-const code2ProtocolConverter = c2p.createConverter();
-const protocol2CodeConverter = p2c.createConverter();
+exports.__esModule = true;
+var vscode_json_languageservice_1 = require("vscode-json-languageservice");
+var c2p = __importStar(require("vscode-languageclient/lib/codeConverter"));
+var p2c = __importStar(require("vscode-languageclient/lib/protocolConverter"));
+var code2ProtocolConverter = c2p.createConverter();
+var protocol2CodeConverter = p2c.createConverter();
 // always have things registered, just switch out what is called
 // single client class, multiple objects for different language servers
 // class LanguageServicesProvider {
 //     constructor() {}
 // }
-const MODEL_URI = 'inmemory://model.json';
+var MODEL_URI = 'inmemory://model.json';
 function createDocument(model) {
     return vscode_json_languageservice_1.TextDocument.create(MODEL_URI, model.getModeId(), model.getVersionId(), model.getValue());
 }
-exports.configureLanguageServer = (cellsManager) => {
+exports.configureLanguageServer = function (cellsManager) {
     // languages.registerCompletionItemProvider('markdown', {
     //     provideCompletionItems(model, position, context, token): PromiseLike<languages.CompletionList> {
     //         const client = cellsManager.getClientForCell(position.lineNumber) // returns a base client

@@ -4,17 +4,5 @@
   "private": true,
   "engines": {
     "vscode": "^1.25"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "packages/embedded-app/imarkdown_notebooks"
-    ],
-    "nohoist": [
-      "**/nteract/**"
-    ]
-  },
-  "dependencies": {
-    "react-router-dom": "^4.3.1"
   }
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { editor, languages } from 'monaco-editor';
+// import { editor, languages } from 'monaco-editor';
 import CellsManager from './CellsManager'
 
 
@@ -28,18 +28,18 @@ const startState = {
     newContentWidgets: true,
 }
 
-const defaultOptions: editor.IEditorConstructionOptions = {
+const defaultOptions: monaco.editor.IEditorConstructionOptions = {
     glyphMargin: true,
     wordWrap: 'on'
 };
 
-interface ILang extends languages.ILanguageExtensionPoint {
+interface ILang extends monaco.languages.ILanguageExtensionPoint {
 	loader: () => Promise<ILangImpl>;
 }
 
 interface ILangImpl {
-	conf: languages.LanguageConfiguration;
-	language: languages.IMonarchLanguage;
+	conf: monaco.languages.LanguageConfiguration;
+	language: monaco.languages.IMonarchLanguage;
 }
 
 let languageDefinitions: { [languageId: string]: ILang } = {};
@@ -47,8 +47,8 @@ let languageDefinitions: { [languageId: string]: ILang } = {};
 function _loadLanguage(languageId: string): Promise<void> {
 	const loader = languageDefinitions[languageId].loader;
 	return loader().then((mod) => {
-		languages.setMonarchTokensProvider(languageId, mod.language);
-		languages.setLanguageConfiguration(languageId, mod.conf);
+		monaco.languages.setMonarchTokensProvider(languageId, mod.language);
+		monaco.languages.setLanguageConfiguration(languageId, mod.conf);
 	});
 }
 
@@ -65,20 +65,20 @@ export function registerLanguage(def: ILang): void {
 	let languageId = def.id;
 
 	languageDefinitions[languageId] = def;
-	languages.register(def);
-	languages.onLanguage(languageId, () => {
+	monaco.languages.register(def);
+	monaco.languages.onLanguage(languageId, () => {
 		loadLanguage(languageId);
 	});
 }
 
 export interface IMarkdownEditorProps {
-    registerModel: (model: editor.ITextModel) => void;
+    // registerModel: (model: editor.ITextModel) => void;
     kernelManager: any; // TODO: assign real type here
     path: string;
     getContent: () => string;
     style: {width: string, height: string};
     save: (lines: Array<string>) => void;
-    isRename: boolean;
+    // isRename: boolean;
 }
 
 export interface IMarkdownEditorState {
@@ -88,9 +88,9 @@ export interface IMarkdownEditorState {
 
 export default class Notebook extends React.Component<IMarkdownEditorProps, IMarkdownEditorState> {
     monacoRef = React.createRef<HTMLDivElement>();
-    _editor: editor.IStandaloneCodeEditor | null;
-    _model: editor.ITextModel;
-    outputAreaRegex = /^<div [\sA-Za-z="-]*(jp-OutputArea-output)/
+    _editor: monaco.editor.IStandaloneCodeEditor | null;
+    _model: monaco.editor.ITextModel;
+    outputAreaRegex = /^<div [\sA-Za-z="-]*(jp-OutputArea)/
     height = 800 // TODO: stop hardcoding this
     _cellsManager: CellsManager | null;
 
@@ -100,18 +100,17 @@ export default class Notebook extends React.Component<IMarkdownEditorProps, IMar
         // this.monacoRef = React.createRef();
         this._editor = null;
         this._cellsManager = null;
-        this._model = editor.createModel('', startState.language);
-        this.props.registerModel(this._model);
+        this._model = monaco.editor.createModel('', startState.language);
+        // this.props.registerModel(this._model);
         this.keyHandler = this.keyHandler.bind(this)
         this.save = this.save.bind(this)
     }
 
     async componentDidMount() {
-        this._editor = editor.create(this.monacoRef.current!, defaultOptions);
+        this._editor = monaco.editor.create(this.monacoRef.current!, defaultOptions);
         this._editor.setModel(this._model)
-        
+
         if (this._cellsManager === null) {
-            console.log(" ===== creating new cells manager ====")
             this._cellsManager = new CellsManager(this._model, this._editor, this.props.kernelManager);
             Cells.installCellsManager(this._cellsManager);
         }
@@ -122,9 +121,9 @@ export default class Notebook extends React.Component<IMarkdownEditorProps, IMar
 
         this._editor.layout()
 
-        if (this.props.path) {
-            this.initializeModel()
-        }
+        // if (this.props.path) {
+        //     this.initializeModel()
+        // }
     }
 
     async getParseContent() {
@@ -134,6 +133,8 @@ export default class Notebook extends React.Component<IMarkdownEditorProps, IMar
         let outputs = 0;
         for (let i = 0; i < contentSplit.length; i++) {
             const item = contentSplit[i];
+            console.log(item)
+            console.log(item.match(this.outputAreaRegex))
             if (item.match(this.outputAreaRegex) && this._cellsManager) {
                 console.log("match!")
                 console.log(item)
@@ -147,28 +148,28 @@ export default class Notebook extends React.Component<IMarkdownEditorProps, IMar
         return editorContent.join('\n')
     }
     
-    async initializeModel() {
-        if (this.props.getContent) {
-            const content = await this.getParseContent();
-            this._model.pushEditOperations(
-                [],
-                [
-                  {
-                    range: this._model.getFullModelRange(),
-                    text: content
-                  },
-                ],
-                (inverseEditOperations) => []
-            )
-        }
-    }
+    // async initializeModel() {
+    //     if (this.props.getContent) {
+    //         const content = await this.getParseContent();
+    //         this._model.pushEditOperations(
+    //             [],
+    //             [
+    //               {
+    //                 range: this._model.getFullModelRange(),
+    //                 text: content
+    //               },
+    //             ],
+    //             (inverseEditOperations) => []
+    //         )
+    //     }
+    // }
 
     componentWillReceiveProps(newProps: IMarkdownEditorProps) {
-        if (newProps.path !== null && this.props.path !== newProps.path && !newProps.isRename && this._cellsManager) {
-            this._cellsManager.disposeCells()
-            // this.initializeModel(newProps.path)
-            this.initializeModel()
-        }
+        // if (newProps.path !== null && this.props.path !== newProps.path && !newProps.isRename && this._cellsManager) {
+        //     this._cellsManager.disposeCells()
+        //     // this.initializeModel(newProps.path)
+        //     this.initializeModel()
+        // }
 
         if (newProps.style.width !== this.props.style.width && this._editor) {
             console.log("new width, ", this.props.style.width)
@@ -192,9 +193,24 @@ export default class Notebook extends React.Component<IMarkdownEditorProps, IMar
     }
 
     keyHandler(e: React.KeyboardEvent<HTMLDivElement>) {
-        if(e.metaKey && e.key == 's') {
+        if(e.metaKey && e.key === 's') {
             this.save()
             e.preventDefault()
+        }
+        if(e.shiftKey && e.key === 'Enter') {
+            console.log("enter hit")
+            console.log(this._cellsManager)
+            if(this._cellsManager) {
+                this._cellsManager.executeCursorCell()
+            }
+            e.preventDefault()
+        }
+        if(e.ctrlKey && e.key === 'Enter') {
+            e.preventDefault()
+            if(this._cellsManager) {
+                this._cellsManager.executeCursorLine()
+            }
+            console.log("prevent default?")
         }
     }
 

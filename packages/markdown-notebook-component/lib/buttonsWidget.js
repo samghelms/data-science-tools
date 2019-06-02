@@ -6,9 +6,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const monaco = __importStar(require("monaco-editor"));
-exports.buttonsWidget = (startLineNumber, editorWidth, addOutputCB, clearOutputCB, getLineNumber) => ({
+exports.__esModule = true;
+var monaco = __importStar(require("monaco-editor"));
+exports.buttonsWidget = function (startLineNumber, editorWidth, addOutputCB, clearOutputCB, getLineNumber) { return ({
     domNode: null,
     getId: function () {
         return 'my.content.widget.' + startLineNumber.toString();
@@ -18,20 +18,20 @@ exports.buttonsWidget = (startLineNumber, editorWidth, addOutputCB, clearOutputC
         // this.domNode.innerHTML = 'My content widget';
         this.domNode.className = 'buttons';
         this.domNode.style.pointerEvents = 'none';
-        this.domNode.style.width = `1000px`;
+        this.domNode.style.width = "1000px";
         this.domNode.style.display = 'flex';
         this.domNode.style.justifyContent = 'flex-end';
-        const internalDomNode = document.createElement('div');
-        const btn = document.createElement('button');
+        var internalDomNode = document.createElement('div');
+        var btn = document.createElement('button');
         btn.innerHTML = 'run code';
-        btn.onclick = (e) => {
+        btn.onclick = function (e) {
             addOutputCB();
         };
         btn.style.pointerEvents = 'all';
         btn.style.marginRight = '20px';
-        const btnClear = document.createElement('button');
+        var btnClear = document.createElement('button');
         btnClear.innerHTML = 'clear output';
-        btnClear.onclick = (e) => {
+        btnClear.onclick = function (e) {
             clearOutputCB();
         };
         btnClear.style.pointerEvents = 'all';
@@ -44,9 +44,9 @@ exports.buttonsWidget = (startLineNumber, editorWidth, addOutputCB, clearOutputC
     getPosition: function () {
         return {
             position: {
-                lineNumber: getLineNumber(),
+                lineNumber: getLineNumber()
             },
             preference: [monaco.editor.ContentWidgetPositionPreference.EXACT]
         };
     }
-});
+}); };

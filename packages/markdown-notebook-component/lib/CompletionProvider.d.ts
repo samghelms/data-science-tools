@@ -1,7 +1,7 @@
-import { MonacoLanguageClient } from './MonacoLanguageClient';
-import { editor } from 'monaco-editor';
+/// <reference types="monaco-editor-core/monaco" />
+import { MonacoLanguageClient } from 'monaco-languageclient';
 import CellsManager from './CellsManager';
 export default class CompletionProvider {
     languageClient: MonacoLanguageClient;
-    constructor(editor: editor.IStandaloneCodeEditor, cellManager: CellsManager);
+    constructor(_editor: monaco.editor.IStandaloneCodeEditor, cellManager: CellsManager);
 }

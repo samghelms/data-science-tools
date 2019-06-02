@@ -1,8 +1,8 @@
 'use strict';
 
 var extend = require('xtend');
-var document = require('global/document');
-var window = require('global/window');
+// var document = require('global/document');
+// var window = require('global/window');
 var EventEmitter = require('eventemitter3');
 var isArray = require('x-is-array');
 
