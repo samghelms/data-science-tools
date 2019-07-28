@@ -25,7 +25,8 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build:vscode": "export npm_package_engines_vscode=1.25 && node node_modules/vscode/bin/install",
-    "build:watch": "tsc -w"
+    "build:watch": "tsc -w",
+    "build": "tsc"
   },
   "dependencies": {
     "@sourcegraph/vscode-ws-jsonrpc": "^0.0.3-fork",

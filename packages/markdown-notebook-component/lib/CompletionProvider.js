@@ -63,7 +63,7 @@ var CompletionProvider = /** @class */ (function () {
                 // this2.connection = connection;
                 if (cellManager) {
                     console.log("installing");
-                    // console.log(_editor)
+                    console.log(_editor);
                     monaco_languageclient_1.MonacoServices.install(_editor);
                     console.log(monaco_languageclient_1.MonacoServices.get());
                     console.log("services get");

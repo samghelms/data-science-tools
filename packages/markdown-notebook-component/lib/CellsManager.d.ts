@@ -52,7 +52,7 @@ export default class CellsManager {
         key: string;
         value: Cell;
     };
-    onCellBoundary(line: number): 1 | 0 | 2;
+    onCellBoundary(line: number): 2 | 1 | 0;
     disposeCells(): void;
     serializeCells(): {
         line: number;

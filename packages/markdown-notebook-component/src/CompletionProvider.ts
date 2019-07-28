@@ -86,7 +86,7 @@ export default class CompletionProvider {
                 // this2.connection = connection;
                 if (cellManager) {
                 console.log("installing")
-                // console.log(_editor)
+                console.log(_editor)
                 MonacoServices.install(_editor);
                 console.log(MonacoServices.get())
                 console.log("services get")
