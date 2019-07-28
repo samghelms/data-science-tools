@@ -1,1 +1,3 @@
 notebook
+python-jsonrpc-server
+python-language-server

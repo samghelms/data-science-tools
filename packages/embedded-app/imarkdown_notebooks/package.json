@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "imarkdown_notebooks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.25"
   },
@@ -54,11 +54,9 @@
   },
   "scripts": {
     "prepare": "npm run clean && npm run update-vscode && npm run build",
-    "compile": "tsc",
-    "watch": "tsc -w",
-    "clean": "rimraf lib",
     "build": "webpack",
     "copy": "cp src/index.css lib && cp src/app.css lib",
+    "clean": "npm run clean:file-deps && npm run clean:monaco-languageclient",
     "update:file-deps": "npm run clean:file-deps && npm install",
     "clean:file-deps": "npm run clean:monaco-languageclient",
     "update:monaco-languageclient": "npm run clean:monaco-languageclient && npm install",

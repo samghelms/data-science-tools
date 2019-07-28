@@ -2,7 +2,7 @@ import json
 import os
 
 version_info = (0, 0, 0)
-__version__ = "0.0.0"
+__version__ = "0.0.1"
 
 from . import PACKAGE_DIR
 

@@ -5,7 +5,7 @@ import setuptools
 import json
 import os
 
-version = '0.0.0-dev'
+version = '0.0.2-dev'
 name = "imarkdown_notebooks"
 
 here = os.path.realpath(os.path.dirname(__file__))
@@ -30,7 +30,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['notebook'],
+    install_requires=['notebook', 'python-jsonrpc-server', 'python-language-server'],
     data_files=data_files,
     entry_points={
         'console_scripts': [

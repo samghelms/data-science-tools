@@ -641,7 +641,35 @@
         "version": "a42b7d08df859d5d5774a43c161a70656b7e58c0593f249f5d403a393e0b91c6",
         "signature": "a42b7d08df859d5d5774a43c161a70656b7e58c0593f249f5d403a393e0b91c6"
       },
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts": {
+      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx": {
+        "version": "b5682fffe728a8cc31f9985960e2acffddfc6696fc9f622da58ee40148c5fcb7",
+        "signature": "aeaacd2e9a5fc8fa004752a34e6f53ea7d0dca3a3fd5a2d0f757af26d5ffe4a5"
+      },
+      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx": {
+        "version": "5aa842daa5d736aef2537295c9e8758a0010c86ec29b6ddd497bf5d4f64f83b8",
+        "signature": "b89967ab042a24e3c825fac3d50554c0d05338c961f74504fb5d911e73a0633f"
+      },
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts": {
+        "version": "44dfc4c092e4bd4ec56f56086cc820c273a051638af911ca9e363c6370215f47",
+        "signature": "44dfc4c092e4bd4ec56f56086cc820c273a051638af911ca9e363c6370215f47"
+      },
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts": {
+        "version": "5217ca5c5e094fa32f60e1e7ab53d48fe80f51419da2e86473e90d29c6834427",
+        "signature": "5217ca5c5e094fa32f60e1e7ab53d48fe80f51419da2e86473e90d29c6834427"
+      },
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts": {
+        "version": "43f2d6ac60f7efcc36836cb94ecaeb4e51dfeca910299dc6da5362fc708ae4e2",
+        "signature": "43f2d6ac60f7efcc36836cb94ecaeb4e51dfeca910299dc6da5362fc708ae4e2"
+      },
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts": {
+        "version": "69f88c88a087b04a53732c662ffe1d5d7038ae93b54044fbcb71afad128f9f1c",
+        "signature": "69f88c88a087b04a53732c662ffe1d5d7038ae93b54044fbcb71afad128f9f1c"
+      },
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts": {
+        "version": "427ba6e9803ac1c28520c59ac739cb97f72206d6242051743aae9574b5e03367",
+        "signature": "427ba6e9803ac1c28520c59ac739cb97f72206d6242051743aae9574b5e03367"
+      },
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts": {
         "version": "9a3c1c856108993b86193bac46bb067234506e232727c5541643a23b3bdf8b13",
         "signature": "9a3c1c856108993b86193bac46bb067234506e232727c5541643a23b3bdf8b13"
       },
@@ -865,10 +893,6 @@
         "version": "df82b712e3a8bfa6db2842413fae7bb96d123485a34050e155bd58b239b11fec",
         "signature": "df82b712e3a8bfa6db2842413fae7bb96d123485a34050e155bd58b239b11fec"
       },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts": {
-        "version": "44dfc4c092e4bd4ec56f56086cc820c273a051638af911ca9e363c6370215f47",
-        "signature": "44dfc4c092e4bd4ec56f56086cc820c273a051638af911ca9e363c6370215f47"
-      },
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts": {
         "version": "6dbd8b9ca8fd4065892ddbe27df720472ee1e46a97580d3e1a4efa4378f96d3e",
         "signature": "6dbd8b9ca8fd4065892ddbe27df720472ee1e46a97580d3e1a4efa4378f96d3e"
@@ -957,165 +981,9 @@
         "version": "185925a29b03cfe23bf232431e4eea5aa80e117c1330284ceebf5b5e1daacfd6",
         "signature": "185925a29b03cfe23bf232431e4eea5aa80e117c1330284ceebf5b5e1daacfd6"
       },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/disposable.d.ts": {
-        "version": "ba8bea87bc4eda86ba04b7e3e450a61553be7907923a647992723c7ca13a9dae",
-        "signature": "ba8bea87bc4eda86ba04b7e3e450a61553be7907923a647992723c7ca13a9dae"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/connection.d.ts": {
-        "version": "054ff35ac5d35d7bebc9e400bfcfa477230f9a1ba0d6896645ebb914c927a478",
-        "signature": "054ff35ac5d35d7bebc9e400bfcfa477230f9a1ba0d6896645ebb914c927a478"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts": {
-        "version": "bcc394290c482f1acef68481febd0d098216477cdd67d9a58c5adc4915bd5a47",
-        "signature": "bcc394290c482f1acef68481febd0d098216477cdd67d9a58c5adc4915bd5a47"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts": {
-        "version": "6dbd8b9ca8fd4065892ddbe27df720472ee1e46a97580d3e1a4efa4378f96d3e",
-        "signature": "6dbd8b9ca8fd4065892ddbe27df720472ee1e46a97580d3e1a4efa4378f96d3e"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.typedefinition.d.ts": {
-        "version": "8ed730f94a1d1ec0a988c7c20d900838edca918c6007e8414c811d09da9ca82f",
-        "signature": "8ed730f94a1d1ec0a988c7c20d900838edca918c6007e8414c811d09da9ca82f"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.workspacefolders.d.ts": {
-        "version": "70c8285f4d328219598d49468f1ba9e11eb8986c5ba2589d135daf1b4318d75f",
-        "signature": "70c8285f4d328219598d49468f1ba9e11eb8986c5ba2589d135daf1b4318d75f"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.configuration.d.ts": {
-        "version": "d578ad451a6dcb9423235693f7796762b25f62f2418c9c195e630d5f1e096a1b",
-        "signature": "d578ad451a6dcb9423235693f7796762b25f62f2418c9c195e630d5f1e096a1b"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.colorprovider.d.ts": {
-        "version": "6b101b93302601dfeffaa059584025917338034a4e0cf4901de4a0d12285f7f0",
-        "signature": "6b101b93302601dfeffaa059584025917338034a4e0cf4901de4a0d12285f7f0"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.foldingrange.d.ts": {
-        "version": "685029b83806fa5f622523084d741b988f0faf0055995c25de4489d80320afc2",
-        "signature": "685029b83806fa5f622523084d741b988f0faf0055995c25de4489d80320afc2"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.declaration.d.ts": {
-        "version": "481bec306b262b8b787c6ca5cdba7089c9424a4c197100561312d7eb367f5b99",
-        "signature": "481bec306b262b8b787c6ca5cdba7089c9424a4c197100561312d7eb367f5b99"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts": {
-        "version": "d51f4ca4af328d20ca4688a5a794afec4b3ca2d6680a7958dacdc0ef8cf83494",
-        "signature": "d51f4ca4af328d20ca4688a5a794afec4b3ca2d6680a7958dacdc0ef8cf83494"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts": {
-        "version": "a1a9663551df20d2802ead0623d2ac9e8594312fae376e953c6be340f4a7a09c",
-        "signature": "a1a9663551df20d2802ead0623d2ac9e8594312fae376e953c6be340f4a7a09c"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/colorprovider.d.ts": {
-        "version": "240f82b98aa9037ca2eeab5241f964ad20542c85779c853319785177b7e83276",
-        "signature": "240f82b98aa9037ca2eeab5241f964ad20542c85779c853319785177b7e83276"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/implementation.d.ts": {
-        "version": "57275f1f03897ab3801604a0b2379e1403738a7fe90610610ea2533d2a489703",
-        "signature": "57275f1f03897ab3801604a0b2379e1403738a7fe90610610ea2533d2a489703"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/typedefinition.d.ts": {
-        "version": "fb3c75f9db5f3962eb338ff7c7b6cd3cfcc986e42fd72bcebcb6228a6f262722",
-        "signature": "fb3c75f9db5f3962eb338ff7c7b6cd3cfcc986e42fd72bcebcb6228a6f262722"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/configuration.d.ts": {
-        "version": "95cb22cf2cfad93b49f87653e4001201715fb9e63e0013ad3963e0e8185e1b22",
-        "signature": "95cb22cf2cfad93b49f87653e4001201715fb9e63e0013ad3963e0e8185e1b22"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/workspacefolders.d.ts": {
-        "version": "cde98f86a11df161981d5ac5ec53177e41d0904e76f3ae818473e6443e95991f",
-        "signature": "cde98f86a11df161981d5ac5ec53177e41d0904e76f3ae818473e6443e95991f"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/foldingrange.d.ts": {
-        "version": "436e1bc0f2a6bb749d1dd73ea801b63b6e490c14c77852483d912e7aa5a42931",
-        "signature": "436e1bc0f2a6bb749d1dd73ea801b63b6e490c14c77852483d912e7aa5a42931"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/codeconverter.d.ts": {
-        "version": "444f30f3b0c15705dc79bed582c8649060c62e652432e5bea5453d64f6cdb220",
-        "signature": "444f30f3b0c15705dc79bed582c8649060c62e652432e5bea5453d64f6cdb220"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolcompletionitem.d.ts": {
-        "version": "1784829ab5d1c118636e477e216e1f7eb3ac53707e333c74fc30f9078d77faa3",
-        "signature": "1784829ab5d1c118636e477e216e1f7eb3ac53707e333c74fc30f9078d77faa3"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolconverter.d.ts": {
-        "version": "2d52c689418851cb97d0fef50d45ab8497223fab524ffdb91d5235b2ca3bae9d",
-        "signature": "2d52c689418851cb97d0fef50d45ab8497223fab524ffdb91d5235b2ca3bae9d"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts": {
-        "version": "8a309152f45ce67b31160a533df6dc35bd4d154eddec4c17e0115389d0c040cf",
-        "signature": "8a309152f45ce67b31160a533df6dc35bd4d154eddec4c17e0115389d0c040cf"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-language-client.d.ts": {
-        "version": "0d1b26b175326a1277389eddb360eb8ec363bdb214b9422a4a9b5f58fda1ab59",
-        "signature": "0d1b26b175326a1277389eddb360eb8ec363bdb214b9422a4a9b5f58fda1ab59"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-commands.d.ts": {
-        "version": "410ffcc1818d0c3bf6e2ff89b1903b0d722b4ac37ac295df511161ae505217db",
-        "signature": "410ffcc1818d0c3bf6e2ff89b1903b0d722b4ac37ac295df511161ae505217db"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/console-window.d.ts": {
-        "version": "97dce6f06e9f7064d76685f8cb71cbd3b9964c8fa74a6a6b25bb990e373439f3",
-        "signature": "97dce6f06e9f7064d76685f8cb71cbd3b9964c8fa74a6a6b25bb990e373439f3"
-      },
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts": {
         "version": "d3e747bf934b3fbddcc462bf01a2a11f31cb8d7f7ff4e0689fffff1e7b223929",
         "signature": "d3e747bf934b3fbddcc462bf01a2a11f31cb8d7f7ff4e0689fffff1e7b223929"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-languages.d.ts": {
-        "version": "0e5333491e2a940d06ef64c54d05efba799f09765b1472d13b9d6d6fcabb597c",
-        "signature": "0e5333491e2a940d06ef64c54d05efba799f09765b1472d13b9d6d6fcabb597c"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-workspace.d.ts": {
-        "version": "4972474e53a912ce32f9f596c4ef82f8c45753b75a0c1ebdea6db17a162c6ebd",
-        "signature": "4972474e53a912ce32f9f596c4ef82f8c45753b75a0c1ebdea6db17a162c6ebd"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-services.d.ts": {
-        "version": "b53a58db051de5885db81704c9a90f0ba123ff9f66d327cc4bf77f80bd81fc40",
-        "signature": "b53a58db051de5885db81704c9a90f0ba123ff9f66d327cc4bf77f80bd81fc40"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/index.d.ts": {
-        "version": "be31169a1f04cda4acf23b8308d71945846e7911cc42fc0a896b38f804610b11",
-        "signature": "be31169a1f04cda4acf23b8308d71945846e7911cc42fc0a896b38f804610b11"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/cellsmanager.d.ts": {
-        "version": "d9f4412e062df990822ba43a91a26787754bd591539af4e51b7f9008cde667d7",
-        "signature": "d9f4412e062df990822ba43a91a26787754bd591539af4e51b7f9008cde667d7"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/completionprovider.d.ts": {
-        "version": "bf8f0acb4181f6b9e6576ff7b3c0d1ea9bc363d5b199c7adb96f7a00f0e5d7d3",
-        "signature": "bf8f0acb4181f6b9e6576ff7b3c0d1ea9bc363d5b199c7adb96f7a00f0e5d7d3"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/node_modules/@jupyterlab/apputils/lib/index.d.ts": {
-        "version": "c14053bde87337a3c6c4394bbf15592aadc4d66a880d5fd94b9711b9b228b9de",
-        "signature": "c14053bde87337a3c6c4394bbf15592aadc4d66a880d5fd94b9711b9b228b9de"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx": {
-        "version": "e507ee1c61a37e116beb2fd3780f5cb673c15b9dc8c1205a0839d226bd9be6b8",
-        "signature": "a930e77cd417ce327690ee509b4e44ad188242dfd97e35e80687a09358affb6a"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/notebook.d.ts": {
-        "version": "6f8bc8691f96a0d622c47436200e43af177598b1110155c3d7d64e390e8a8292",
-        "signature": "6f8bc8691f96a0d622c47436200e43af177598b1110155c3d7d64e390e8a8292"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx": {
-        "version": "5aa842daa5d736aef2537295c9e8758a0010c86ec29b6ddd497bf5d4f64f83b8",
-        "signature": "b89967ab042a24e3c825fac3d50554c0d05338c961f74504fb5d911e73a0633f"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts": {
-        "version": "5217ca5c5e094fa32f60e1e7ab53d48fe80f51419da2e86473e90d29c6834427",
-        "signature": "5217ca5c5e094fa32f60e1e7ab53d48fe80f51419da2e86473e90d29c6834427"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts": {
-        "version": "43f2d6ac60f7efcc36836cb94ecaeb4e51dfeca910299dc6da5362fc708ae4e2",
-        "signature": "43f2d6ac60f7efcc36836cb94ecaeb4e51dfeca910299dc6da5362fc708ae4e2"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts": {
-        "version": "69f88c88a087b04a53732c662ffe1d5d7038ae93b54044fbcb71afad128f9f1c",
-        "signature": "69f88c88a087b04a53732c662ffe1d5d7038ae93b54044fbcb71afad128f9f1c"
-      },
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts": {
-        "version": "427ba6e9803ac1c28520c59ac739cb97f72206d6242051743aae9574b5e03367",
-        "signature": "427ba6e9803ac1c28520c59ac739cb97f72206d6242051743aae9574b5e03367"
       },
       "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/client.ts": {
         "version": "6894d49097080d6e409d564fc72791e14ba9b4d10a9a800fcd164dded14c9444",
@@ -2328,7 +2196,51 @@
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts": [
+      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/outputarea/lib/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/rendermime/lib/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/services/lib/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/js-yaml/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernelmanager.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/services/lib/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts": [
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -2667,10 +2579,6 @@
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts": [
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
@@ -2820,309 +2728,15 @@
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/disposable.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/connection.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.typedefinition.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.workspacefolders.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.configuration.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.colorprovider.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.foldingrange.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.declaration.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.typedefinition.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.workspacefolders.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.configuration.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.colorprovider.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.foldingrange.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.declaration.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/colorprovider.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/implementation.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/typedefinition.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/configuration.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/workspacefolders.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/foldingrange.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/codeconverter.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolcompletionitem.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolconverter.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolcompletionitem.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/colorprovider.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/implementation.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/typedefinition.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/configuration.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/workspacefolders.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/foldingrange.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/codeconverter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolconverter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-language-client.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/connection.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-commands.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/console-window.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts": [
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-languages.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/disposable.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-workspace.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-services.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-commands.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-languages.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-workspace.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/console-window.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/index.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/disposable.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/connection.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-language-client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-commands.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/console-window.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-languages.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-workspace.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/cellsmanager.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/completionprovider.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/completionprovider.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/cellsmanager.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/node_modules/@jupyterlab/apputils/lib/index.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/clientsession.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/clipboard.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/commandlinker.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/commandpalette.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/dialog.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/domutils.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/hoverbox.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/iframe.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/instancetracker.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/mainareawidget.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/sanitizer.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/spinner.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/splash.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/styling.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/thememanager.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/toolbar.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/vdom.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/windowresolver.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/outputarea/lib/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/rendermime/lib/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/services/lib/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/js-yaml/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/completionprovider.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/notebook.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/cellsmanager.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernelmanager.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/services/lib/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/notebook.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/client.ts": [
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/notebook.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -4336,7 +3950,41 @@
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts": [
+      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/services/lib/index.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react/index.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernelmanager.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts": [
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
+        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts": [
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -4675,10 +4323,6 @@
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts": [
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
@@ -4828,290 +4472,9 @@
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/disposable.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/connection.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.typedefinition.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.workspacefolders.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.configuration.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.colorprovider.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.foldingrange.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.declaration.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.typedefinition.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.workspacefolders.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.configuration.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.colorprovider.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.foldingrange.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.declaration.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/colorprovider.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/implementation.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/typedefinition.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/configuration.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/workspacefolders.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/foldingrange.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/codeconverter.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolcompletionitem.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolconverter.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolcompletionitem.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/colorprovider.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/implementation.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/typedefinition.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/configuration.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/workspacefolders.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/foldingrange.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/codeconverter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolconverter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-language-client.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/connection.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-commands.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/console-window.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts": [
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-languages.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/disposable.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-workspace.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-services.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-commands.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-languages.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-workspace.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/console-window.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/index.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/disposable.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/connection.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-language-client.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-commands.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/console-window.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-languages.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-workspace.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-services.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/cellsmanager.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/completionprovider.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/completionprovider.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/cellsmanager.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/node_modules/@jupyterlab/apputils/lib/index.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/clientsession.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/clipboard.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/commandlinker.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/commandpalette.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/dialog.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/domutils.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/hoverbox.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/iframe.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/instancetracker.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/mainareawidget.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/sanitizer.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/spinner.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/splash.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/styling.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/thememanager.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/toolbar.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/vdom.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/apputils/lib/windowresolver.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/services/lib/index.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/notebook.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/cellsmanager.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react/index.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernelmanager.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts": [
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
-        "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/util.d.ts",
         "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5436,7 +4799,12 @@
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/outputarea/lib/widget.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@jupyterlab/outputarea/lib/index.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/js-yaml/index.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/node_modules/monaco-editor-core/monaco.d.ts",
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts",
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts",
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts",
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts",
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-editor-core/monaco.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/thenable.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/globals.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/node/assert.d.ts",
@@ -5492,7 +4860,6 @@
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/pipesupport.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/socketsupport.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-jsonrpc/lib/main.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-types/lib/umd/main.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-protocol/lib/protocol.typedefinition.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-languageserver-protocol/lib/protocol.workspacefolders.d.ts",
@@ -5515,61 +4882,21 @@
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/node_modules/vscode-jsonrpc/lib/main.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-uri/lib/umd/index.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/services.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/disposable.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/connection.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode/vscode.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.implementation.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.typedefinition.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.workspacefolders.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.configuration.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.colorprovider.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.foldingrange.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.declaration.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/protocol.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/node_modules/vscode-languageserver-protocol/lib/main.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/colorprovider.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/implementation.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/typedefinition.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/configuration.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/workspacefolders.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/foldingrange.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/codeconverter.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolcompletionitem.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/protocolconverter.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-base-languageclient/lib/client.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-language-client.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-commands.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/console-window.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-converter.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-languages.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-workspace.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/monaco-services.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/monaco-languageclient/lib/index.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/cellsmanager.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/completionprovider.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/node_modules/@jupyterlab/apputils/lib/index.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx",
-      "/users/shelms/documents/git-repos/data-science-tools/packages/markdown-notebook-component/lib/notebook.d.ts",
       [
-        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx",
+        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/client.ts",
         [
           {
-            "file": "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx",
-            "start": 5693,
-            "length": 8,
-            "code": 2739,
+            "file": "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/client.ts",
+            "start": 586,
+            "length": 29,
+            "messageText": "Cannot find module 'markdown-notebook-component'.",
             "category": 1,
-            "messageText": "Type '{ path: string; kernelManager: KernelManager; style: { width: string; height: string; }; }' is missing the following properties from type 'Readonly<IMarkdownEditorProps>': getContent, save"
+            "code": 2307
           }
         ]
       ],
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsoncontributions.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonschema.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguagetypes.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/vscode-json-languageservice/lib/umd/jsonlanguageservice.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/client.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/react-dom/index.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/index.tsx",
       "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/main.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/history/domutils.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/history/createbrowserhistory.d.ts",
@@ -5600,7 +4927,22 @@
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/vfile-message/index.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/vfile/index.d.ts",
       "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/webpack/node_modules/source-map/source-map.d.ts",
-      "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/webpack/index.d.ts"
+      "/users/shelms/documents/git-repos/data-science-tools/node_modules/@types/webpack/index.d.ts",
+      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/kernels/jupyterkernel.tsx",
+      [
+        "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx",
+        [
+          {
+            "file": "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/app.tsx",
+            "start": 462,
+            "length": 29,
+            "messageText": "Cannot find module 'markdown-notebook-component'.",
+            "category": 1,
+            "code": 2307
+          }
+        ]
+      ],
+      "/users/shelms/documents/git-repos/data-science-tools/packages/embedded-app/example-test/src/index.tsx"
     ]
   },
   "version": "3.5.1"

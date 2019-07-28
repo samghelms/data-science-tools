@@ -1,6 +1,6 @@
 {
   "name": "imarkdown",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "interactive markdown notebooks",
   "scripts": {
     "build:python": "python setup.py sdist && python setup.py bdist_wheel",
@@ -15,5 +15,8 @@
   "private": true,
   "repository": "",
   "author": "Samuel Helms",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^2.6.3"
+  }
 }

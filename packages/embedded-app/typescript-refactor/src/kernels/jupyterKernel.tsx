@@ -6,7 +6,8 @@ import {
 } from '@jupyterlab/rendermime';
 import { Kernel, TerminalSession } from '@jupyterlab/services';
 import * as yaml from 'js-yaml';
-import CompletionProvider from 'markdown-notebook-component/lib/CompletionProvider'
+// import 'markdown-notebook-component/lib/CompletionProvider';
+// import CompletionProvider from 'markdown-notebook-component/lib/CompletionProvider';
 import { ISanitizer } from '@jupyterlab/apputils'
 
 export interface JupyterKernelDisplayProps {

@@ -47,7 +47,7 @@ class App extends Component<AppProps, AppState> {
     }
     // this.openNotebook = this.openNotebook.bind(this)
     // this.openFile = this.openFile.bind(this)
-    // this.getContent = this.getContent.bind(this)
+    this.getContent = this.getContent.bind(this)
     // this.saveContent = this.saveContent.bind(this)
     // this.registerModel = this.registerModel.bind(this)
     // this.createFile = this.createFile.bind(this)
@@ -144,10 +144,10 @@ class App extends Component<AppProps, AppState> {
   //   // this.setState({path: path, name: name})
   // }
 
-  // async getContent() {
-  //   const {content} = await this.state.fsProvider.getContent(this.state.path);
-  //   return content;
-  // }
+  async getContent() {
+    const {content} = await this.state.fsProvider.getContent(this.state.path);
+    return content;
+  }
 
   // changeName(newName) {
   //   let newState = { name: newName }
@@ -188,7 +188,7 @@ class App extends Component<AppProps, AppState> {
             path={this.state.path || ""} 
             // isRename={this.state.needsRename} 
             // save={this.saveContent} 
-            // getContent={this.getContent} 
+            getContent={this.getContent} 
             kernelManager={this._kernelManager} 
             style={{width: `${this.state.width}px`, height: "100%"}}
           />
