@@ -3,4 +3,5 @@ __pycache__/
 .env/
 .ipynb_checkpoints/
 .test-env/
+.DS_Store
 build/

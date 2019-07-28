@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: imarkdown-notebooks
-Version: 1.0.0
+Version: 0.0.1
 Summary: Extension for the jupyter notebook server and nteract
 Home-page: https://github.com/nteract/nteract
 Author: nteract contributors

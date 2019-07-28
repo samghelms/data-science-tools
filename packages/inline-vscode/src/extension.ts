@@ -5,8 +5,6 @@
 
 import {
 	CancellationToken,
-	CodeInset,
-	CodeInsetProvider,
 	ExtensionContext,
 	languages,
 	ProviderResult,
@@ -15,6 +13,7 @@ import {
 	Webview,
 	CancellationTokenSource,
 	commands,
+	WebviewOptions,
 } from 'vscode';
 
 export function activate(context: ExtensionContext): void {
@@ -25,70 +24,63 @@ export function activate(context: ExtensionContext): void {
 		{ scheme: 'file', language: 'typescript' },
 		{ scheme: 'unknown', language: 'typescript' },
 	];
-	const provider = new DocCodeInsetProvider();
-	context.subscriptions.push(
-		languages.registerCodeInsetProvider(selector, provider)
-	);
+	console.log("test");
+	// const provider = new DocCodeInsetProvider();
+	// context.subscriptions.push(
+	// 	languages.registerCodeInsetProvider(selector, provider)
+	// );
 	// console.log("registered")
 	// const ct = new CancellationTokenSource().token
 	// provider.provideCodeInsets(activeTextEditor.document, ct)
 
 	// activeTextEditor
-}
-
-const inlineRegex = /INLINE\s+(https?:\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])?)/;
-
-class DocCodeInsetProvider implements CodeInsetProvider {
-	private urlForLine: { [line: number]: string } = {};
-
-	provideCodeInsets(document: TextDocument, _cancellationToken: CancellationToken): ProviderResult<CodeInset[]> {
-		console.log("providing insets");
-		let result: CodeInset[] = [];
-		for (let i = 0; i < document.lineCount; i++) {
-			const line = document.lineAt(i);
-			const match = inlineRegex.exec(line.text);
-			if (match && match.length > 1) {
-				this.urlForLine[line.range.end.line] = match[1];
-				result.push({ range: line.range });
-			}
+	commands.registerCommand('extension.sayHello', async (args, brgs, crgs) => {
+        if (!window.activeTextEditor) {
+            return;
 		}
-		console.log(result)
-		commands.executeCommand('vscode.executeCodeInsetProvider')
-		return result;
-	}
 
-	resolveCodeInset(codeInset: CodeInset, webview: Webview, _token: CancellationToken): ProviderResult<CodeInset> {
-		const MAX_HEIGHT = 1000;
-		console.log("resolveCodeInset");
-		const uri = this.urlForLine[codeInset.range.end.line];
-		webview.html = `<!doctype html>
-			<html lang="en">
-				<head>
-					<meta charset="utf-8">
-					<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-				</head>
-				<body>
-					<script>window.onerror=function(){console.log('ERR!')}</script>
-					<p id='error-message' style="display:none">Unable to embed content at ${uri}. Some web sites do not support embedding.</p>
-					<iframe id='hostframe' src="${uri}" style="overflow:scroll" frameborder=0></iframe>
-					<script>
-						const vscode = acquireVsCodeApi();
-						const iframe = document.getElementById('hostframe');
-						iframe.onload = function() {
-							const body = iframe.contentWindow.document.body;
-							if (!body.innerHTML) {
-								document.getElementById('error-message').style.display = 'block';
-								iframe.style.display = 'none';
-							}
-							const width = body.scrollWidth;
-							const height = Math.min(${MAX_HEIGHT}, body.scrollHeight);
-							iframe.width = width;
-							iframe.height = height;
-							vscode.postMessage({ type: 'size-info', payload: { width: width, height: height } });
-						}
-					</script>
-				</body>
-			</html>`;
-		return codeInset;
-	}
+        const inset = window.createWebviewTextEditorInset(
+            window.activeTextEditor,
+            window.activeTextEditor.selection.with({ end: window.activeTextEditor.selection.end.translate(8) }),
+            { enableCommandUris: true, enableScripts: true }
+        );
+        inset.onDidDispose(() => {
+            console.log('WEBVIEW disposed...');
+		});
+		inset.webview.html = getWebviewContent();
+		
+		// Handle messages from the webview
+		inset.webview.onDidReceiveMessage(
+			message => {
+			  switch (message.command) {
+				case 'alert':
+				  window.showErrorMessage(message.text);
+				  return;
+			  }
+			},
+			undefined,
+			context.subscriptions
+		  );
+    });
 }
+
+function getWebviewContent() {
+	return `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Cat Coding</title>
+  </head>
+  <body>
+	  <button id="btn" style="z-index: 100;" onclick="close()">close</button>
+	  <script>
+		var btn = document.getElementById('btn')
+		console.log(btn)
+	</script>
+	<div> test test </div>
+	<div> test test </div>
+	<div> test test </div>
+  </body>
+  </html>`;
+  }

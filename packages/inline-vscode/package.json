@@ -27,7 +27,13 @@
 					"default": true
 				}
 			}
-		}
+		},
+		"commands": [
+			{
+			  "command": "extension.sayHello",
+			  "title": "Say Hello"
+			}
+		  ]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",

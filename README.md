@@ -1,8 +1,24 @@
 # Data science tools
 
-A monorepo for data science tools (under construction). 
+A monorepo for data science tools. .. thinking about how to reuse components from the very beginning ... Jupyter and vscode much more mature projects ... unsure if I want this to be a project to develop serious software, or to rapidly prototype and test cutting edge ideas ... Call for developers: the more the merrier ...
 
-` `
+## Interactive markdown (imarkdown) notebooks
+
+Imarkdown notebooks generalize rmarkdown notebooks to multiple languages (although at this point in time only python is supported), and leverage Microsoft's open source Monaco editor and Language Server Protocol to provide .
+
+![](./imarkdown_demo.gif)
+
+This app is currently implemented as a Jupyter extension and is in a beta stage. 
+
+Here are some of the advantages imarkdown notebooks have over Jupyter notebooks:
+
+- version control: imarkdown documents are stored as plain markdown files, and outputs are stored on a single line, whereas Jupyter stores notebooks as JSON files. Impossible to read merge conflicts between notebooks should be a thing of the past using imarkdown.
+- language server protocol integration: By building on top of the monaco editor, the application can leverage state of the art code completion via the language server protocol.
+
+
+## Interplanetary explorer (planned)
+
+A finder application that can span multiple computers and filesystems, from remote systems over ssh to hadoop clusters. Attempts to bring the ease of finding files on a mac to cloud computing.
 
 # TODOS:
 
